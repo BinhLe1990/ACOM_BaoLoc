@@ -1,0 +1,262 @@
+﻿namespace DELFI_WHM.NET.CauHinh
+{
+    partial class frmCauHinhPackingUnits
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCauHinhPackingUnits));
+            this.IML = new System.Windows.Forms.ImageList(this.components);
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
+            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.txtDienGiai = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.txtCode = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.spnTrongLuong = new DELFI_WHM.NET.DELFI_User_Control.uSpinEdit();
+            this.griDanhSach = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.Code = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DienGiai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TrongLuong = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
+            this.xtraTabControl3.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // IML
+            // 
+            this.IML.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IML.ImageStream")));
+            this.IML.TransparentColor = System.Drawing.Color.Transparent;
+            this.IML.Images.SetKeyName(0, "Search.png");
+            this.IML.Images.SetKeyName(1, "Exit.png");
+            this.IML.Images.SetKeyName(2, "Save as.png");
+            this.IML.Images.SetKeyName(3, "Open file.png");
+            this.IML.Images.SetKeyName(4, "Redo.png");
+            this.IML.Images.SetKeyName(5, "Cancel.png");
+            this.IML.Images.SetKeyName(6, "btnSave.LargeGlyph.png");
+            this.IML.Images.SetKeyName(7, "postscript.png");
+            this.IML.Images.SetKeyName(8, "Print.png");
+            this.IML.Images.SetKeyName(9, "replaceItem1.LargeGlyph.png");
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageIndex = 0;
+            this.btnSearch.ImageList = this.IML;
+            this.btnSearch.Location = new System.Drawing.Point(669, 113);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(154, 38);
+            this.btnSearch.TabIndex = 59;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.ImageIndex = 6;
+            this.btnLuu.ImageList = this.IML;
+            this.btnLuu.Location = new System.Drawing.Point(832, 113);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(135, 38);
+            this.btnLuu.TabIndex = 60;
+            this.btnLuu.Tag = "ADD";
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // xtraTabControl3
+            // 
+            this.xtraTabControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.xtraTabControl3.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
+            this.xtraTabControl3.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.xtraTabControl3.Name = "xtraTabControl3";
+            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage3;
+            this.xtraTabControl3.Size = new System.Drawing.Size(1776, 209);
+            this.xtraTabControl3.TabIndex = 58;
+            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage3});
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.AutoScroll = true;
+            this.xtraTabPage3.Controls.Add(this.txtDienGiai);
+            this.xtraTabPage3.Controls.Add(this.txtCode);
+            this.xtraTabPage3.Controls.Add(this.spnTrongLuong);
+            this.xtraTabPage3.Controls.Add(this.btnSearch);
+            this.xtraTabPage3.Controls.Add(this.btnLuu);
+            this.xtraTabPage3.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.Image")));
+            this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1733, 199);
+            this.xtraTabPage3.TabPageWidth = 150;
+            this.xtraTabPage3.Text = "Cấu hình Packing Units";
+            // 
+            // txtDienGiai
+            // 
+            this.txtDienGiai.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtDienGiai.iWidth = 150;
+            this.txtDienGiai.Location = new System.Drawing.Point(34, 78);
+            this.txtDienGiai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDienGiai.Name = "txtDienGiai";
+            this.txtDienGiai.sCaption = "Diễn giải";
+            this.txtDienGiai.SelectionStart = 0;
+            this.txtDienGiai.Size = new System.Drawing.Size(614, 29);
+            this.txtDienGiai.TabIndex = 63;
+            // 
+            // txtCode
+            // 
+            this.txtCode.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtCode.iWidth = 150;
+            this.txtCode.Location = new System.Drawing.Point(34, 41);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.sCaption = "Code";
+            this.txtCode.SelectionStart = 0;
+            this.txtCode.Size = new System.Drawing.Size(614, 29);
+            this.txtCode.TabIndex = 62;
+            // 
+            // spnTrongLuong
+            // 
+            this.spnTrongLuong.iWidth = 150;
+            this.spnTrongLuong.Location = new System.Drawing.Point(34, 120);
+            this.spnTrongLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.spnTrongLuong.Name = "spnTrongLuong";
+            this.spnTrongLuong.sCaption = "Trọng lượng";
+            this.spnTrongLuong.Size = new System.Drawing.Size(614, 31);
+            this.spnTrongLuong.TabIndex = 61;
+            this.spnTrongLuong.uEditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spnTrongLuong.uMaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.spnTrongLuong.uMaxValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spnTrongLuong.uMinValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spnTrongLuong.uText = "0";
+            this.spnTrongLuong.uValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // griDanhSach
+            // 
+            this.griDanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.griDanhSach.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.griDanhSach.Location = new System.Drawing.Point(0, 209);
+            this.griDanhSach.MainView = this.gridView1;
+            this.griDanhSach.Margin = new System.Windows.Forms.Padding(4);
+            this.griDanhSach.Name = "griDanhSach";
+            this.griDanhSach.Size = new System.Drawing.Size(1776, 684);
+            this.griDanhSach.TabIndex = 59;
+            this.griDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Code,
+            this.DienGiai,
+            this.TrongLuong});
+            this.gridView1.GridControl = this.griDanhSach;
+            this.gridView1.IndicatorWidth = 50;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gridView1_CustomDrawRowIndicator);
+            // 
+            // Code
+            // 
+            this.Code.Caption = "Code";
+            this.Code.FieldName = "Code";
+            this.Code.Name = "Code";
+            this.Code.Visible = true;
+            this.Code.VisibleIndex = 0;
+            // 
+            // DienGiai
+            // 
+            this.DienGiai.Caption = "Diễn giải";
+            this.DienGiai.FieldName = "DienGiai";
+            this.DienGiai.Name = "DienGiai";
+            this.DienGiai.Visible = true;
+            this.DienGiai.VisibleIndex = 1;
+            // 
+            // TrongLuong
+            // 
+            this.TrongLuong.Caption = "Trọng lượng (Kg)";
+            this.TrongLuong.FieldName = "TrongLuong";
+            this.TrongLuong.Name = "TrongLuong";
+            this.TrongLuong.Visible = true;
+            this.TrongLuong.VisibleIndex = 2;
+            // 
+            // frmCauHinhPackingUnits
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1776, 893);
+            this.Controls.Add(this.griDanhSach);
+            this.Controls.Add(this.xtraTabControl3);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmCauHinhPackingUnits";
+            this.Text = "CẤU HÌNH PACKING UNITS";
+            this.Load += new System.EventHandler(this.frmCauHinhPackingUnits_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
+            this.xtraTabControl3.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.ImageList IML;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private DevExpress.XtraEditors.SimpleButton btnLuu;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DELFI_User_Control.uTextBox txtDienGiai;
+        private DELFI_User_Control.uTextBox txtCode;
+        private DELFI_User_Control.uSpinEdit spnTrongLuong;
+        private DevExpress.XtraGrid.GridControl griDanhSach;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn Code;
+        private DevExpress.XtraGrid.Columns.GridColumn DienGiai;
+        private DevExpress.XtraGrid.Columns.GridColumn TrongLuong;
+    }
+}

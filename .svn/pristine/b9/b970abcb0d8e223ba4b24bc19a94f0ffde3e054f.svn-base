@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Linq;
+using System.IO;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmSanPham : DevExpress.XtraEditors.XtraForm
+    {
+        public frmSanPham()
+        {
+            InitializeComponent();
+        }
+
+        private void frmSanPham_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDongBo_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Dell\Downloads\NAV export files\ACOM_Items.txt";
+            string[] lines = File.ReadAllLines(path, Encoding.UTF8);
+
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                foreach (string line in lines)
+                {
+                    db.DM_VatTu.Add(new DM_VatTu { MaSanPham = line.Substring(1, line.IndexOf(";") - 2), TenSanPham= line.Remove(0, line.IndexOf(";") + 2).Replace("\"", "") });
+                }
+                db.SaveChanges();
+                var data = db.DM_VatTu.ToList();
+                if (data != null)
+                {
+                    griDanhSach.DataSource = data;
+                }
+            }
+        }
+    }
+}

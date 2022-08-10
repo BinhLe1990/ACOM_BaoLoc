@@ -1,0 +1,1759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBACOMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="ChiTiet_LenhGiaoHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostingDate" Type="date" />
+          <Property Name="SaleOrderCalNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SaleContractNo" Type="varchar" MaxLength="50" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="50" />
+          <Property Name="CertificationCode" Type="varchar" MaxLength="50" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="50" />
+          <Property Name="BinCode" Type="varchar" MaxLength="50" />
+          <Property Name="PackingUnit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PackingUnitName" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="LineNo" Type="varchar" MaxLength="50" />
+          <Property Name="Lot" Type="varchar" MaxLength="50" />
+          <Property Name="QtyPicked" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Chitiet_LenhSanXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostingDate" Type="date" />
+          <Property Name="BatchNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="50" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="50" />
+          <Property Name="BinCode" Type="varchar" MaxLength="50" />
+          <Property Name="Lot" Type="varchar" MaxLength="50" />
+          <Property Name="PalletQty" Type="int" />
+          <Property Name="PackingUnitCode" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="LineNo" Type="int" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="PDAUser" Type="varchar" MaxLength="50" />
+          <Property Name="QtyPicked" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="ChiTietSoanHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QRCode" Type="varchar" MaxLength="50" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="50" />
+          <Property Name="Datetime" Type="datetime" />
+          <Property Name="DocumentType" Type="nvarchar" MaxLength="50" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="30" />
+          <Property Name="DocumentNo" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="IDBatchDetail" Type="int" />
+        </EntityType>
+        <EntityType Name="DM_Certificate">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ten" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DM_CropYear">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ten" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DM_KhachHang">
+          <Key>
+            <PropertyRef Name="MaKhachHang" />
+          </Key>
+          <Property Name="MaKhachHang" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TenKhachHang" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DM_LenhGiaoHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SaleOrderCalNo" Type="varchar" MaxLength="50" />
+          <Property Name="PostingDate" Type="date" />
+          <Property Name="SaleContractNo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DM_LenhSanXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostingDate" Type="date" Nullable="false" />
+          <Property Name="BatchNo" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DM_LoaiBao">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Loai" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+          <Property Name="NgayTao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DM_LoaiPhieuGiam">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="LoaiGiamKho" Type="nvarchar" MaxLength="100" />
+          <Property Name="NAV" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DM_Location">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="DM_Lot">
+          <Key>
+            <PropertyRef Name="Lot" />
+          </Key>
+          <Property Name="Lot" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Bag" Type="int" />
+          <Property Name="CropYear" Type="varchar" MaxLength="10" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="20" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="Note" Type="nvarchar" MaxLength="250" />
+          <Property Name="Shift" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="BatchNo" Type="varchar" MaxLength="50" />
+          <Property Name="PackingUnitCode" Type="varchar" MaxLength="50" />
+          <Property Name="Cer" Type="varchar" MaxLength="20" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NGUOIDUNG1" Type="int" Nullable="false" />
+          <Property Name="NGAY1" Type="smalldatetime" />
+          <Property Name="MAY1" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NGUOIDUNG2" Type="int" Nullable="false" />
+          <Property Name="NGAY2" Type="smalldatetime" />
+          <Property Name="MAY2" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DM_NhaVanChuyen">
+          <Key>
+            <PropertyRef Name="MaNhaVanChuyen" />
+          </Key>
+          <Property Name="MaNhaVanChuyen" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TenNhaVanChuyen" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DM_Packing">
+          <Key>
+            <PropertyRef Name="PackageCode" />
+          </Key>
+          <Property Name="PackageType" Type="varchar" MaxLength="20" />
+          <Property Name="PackageCode" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PackageDesc" Type="nvarchar" MaxLength="250" />
+          <Property Name="PackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Format" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="SoBao" Type="int" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NgayTao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DM_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="150" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="VehicleNo" Type="varchar" MaxLength="50" />
+          <Property Name="WeightType" Type="varchar" MaxLength="50" />
+          <Property Name="ContractNo" Type="varchar" MaxLength="50" />
+          <Property Name="TransporterCode" Type="varchar" MaxLength="50" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="50" />
+          <Property Name="VendorCode" Type="varchar" MaxLength="50" />
+          <Property Name="VendorName" Type="nvarchar" MaxLength="300" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="20" />
+          <Property Name="DateIn" Type="datetime" />
+          <Property Name="DateOut" Type="datetime" />
+          <Property Name="FirstWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SecondWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GrossWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TruckTare" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NetWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="nvarchar" MaxLength="500" />
+          <Property Name="ExportNav" Type="bit" />
+          <Property Name="Del" Type="bit" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="PDAUser" Type="varchar" MaxLength="50" />
+          <Property Name="PackageType" Type="varchar" MaxLength="50" />
+          <Property Name="Lot" Type="varchar" MaxLength="50" />
+          <Property Name="BinCode" Type="varchar" MaxLength="50" />
+          <Property Name="ArrayQRCode" Type="varchar" MaxLength="3000" />
+          <Property Name="Certificate" Type="varchar" MaxLength="50" />
+          <Property Name="PackageCode" Type="varchar" MaxLength="50" />
+          <Property Name="UserName2" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DM_PhieuNhap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostingDate" Type="date" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="50" />
+          <Property Name="VendorName" Type="nvarchar" MaxLength="250" />
+          <Property Name="VendorCode" Type="varchar" MaxLength="50" />
+          <Property Name="Lot" Type="varchar" MaxLength="50" />
+          <Property Name="BinCode" Type="varchar" MaxLength="50" />
+          <Property Name="ContractNo" Type="varchar" MaxLength="50" />
+          <Property Name="VehicleNo" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="NetWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Del" Type="bit" Nullable="false" />
+          <Property Name="KhaiBao_SoBao" Type="bit" />
+          <Property Name="NhapTrucTiep" Type="bit" />
+        </EntityType>
+        <EntityType Name="DM_PhieuXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostingDate" Type="date" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="50" />
+          <Property Name="VendorName" Type="nvarchar" MaxLength="250" />
+          <Property Name="VendorCode" Type="varchar" MaxLength="50" />
+          <Property Name="Lot" Type="varchar" MaxLength="50" />
+          <Property Name="BinCode" Type="varchar" MaxLength="50" />
+          <Property Name="ContractNo" Type="varchar" MaxLength="50" />
+          <Property Name="VehicleNo" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Type" Type="varchar" MaxLength="30" />
+          <Property Name="ID_LenhSX" Type="int" />
+          <Property Name="Del" Type="bit" Nullable="false" />
+          <Property Name="KhaiBao_SoBao" Type="bit" />
+        </EntityType>
+        <EntityType Name="DM_Pile">
+          <Key>
+            <PropertyRef Name="BinCode" />
+          </Key>
+          <Property Name="BinCode" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DM_PurchaseContract">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ContractNo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="VendorNo" Type="varchar" MaxLength="20" />
+          <Property Name="VendorName" Type="varchar" MaxLength="50" />
+          <Property Name="ContractDate" Type="date" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="20" />
+          <Property Name="LocationName" Type="varchar" MaxLength="20" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="20" />
+          <Property Name="Cert" Type="varchar" MaxLength="20" />
+          <Property Name="CropYear" Type="varchar" MaxLength="20" />
+          <Property Name="ContractNetWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="UnitOfMeasure" Type="varchar" MaxLength="20" />
+          <Property Name="WeightNoteNo" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DM_VatTu">
+          <Key>
+            <PropertyRef Name="MaSanPham" />
+          </Key>
+          <Property Name="MaSanPham" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TenSanPham" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBACOM.dbo.DM_Vitri' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="DM_Vitri">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Vitri" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="HIS_Phieucancau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_WeightNote" Type="int" />
+          <Property Name="Dateupdate" Type="datetime" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Desc" Type="nvarchar" MaxLength="500" />
+          <Property Name="Loai" Type="varchar" MaxLength="50" />
+          <Property Name="Ghichu" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBACOM.dbo.HT_HETHONG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="HT_HETHONG">
+          <Key>
+            <PropertyRef Name="ID" />
+            
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TENCOQUAN" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DIACHI" Type="nvarchar" MaxLength="255" />
+          <Property Name="DIENTHOAI" Type="nvarchar" MaxLength="50" />
+          <Property Name="FAX" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIL" Type="nvarchar" MaxLength="255" />
+          <Property Name="WEBSITE" Type="nvarchar" MaxLength="255" />
+          <Property Name="DIADIEM" Type="nvarchar" MaxLength="255" />
+          <Property Name="LOCATIONCODE" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="HT_NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="NGUOIDUNG" />
+          </Key>
+          <Property Name="NGUOIDUNG" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TAIKHOAN" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MATKHAU" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="HOTEN" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HOATDONG" Type="bit" />
+          <Property Name="KIEUGIAODIEN" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GHICHU" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="QUYEN" Type="ntext" />
+          <Property Name="MENU_NGANG" Type="ntext" />
+          <Property Name="MENU_DOC" Type="ntext" />
+          <Property Name="DANH_MUC" Type="ntext" />
+          <Property Name="LINH_VUC" Type="ntext" />
+          <Property Name="QUYENPHANQUYEN" Type="bit" Nullable="false" />
+          <Property Name="PathHinhAnh" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="IMG_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="30" />
+          <Property Name="IMG1" Type="image" />
+          <Property Name="IMG2" Type="image" />
+          <Property Name="IMG3" Type="image" />
+          <Property Name="IMG4" Type="image" />
+        </EntityType>
+        <EntityType Name="Log_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="20" />
+          <Property Name="ThoiGian" Type="datetime" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Ghichu" Type="nvarchar" MaxLength="400" />
+          <Property Name="LanCan" Type="int" />
+          <Property Name="SoCanBanDau" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SoSauKhiSua" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Loai" Type="int" />
+        </EntityType>
+        <EntityType Name="tblBigBagConfig">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LOT" Type="varchar" MaxLength="50" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Shift" Type="int" />
+          <Property Name="Bag" Type="int" />
+          <Property Name="CropYear" Type="varchar" MaxLength="10" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+          <Property Name="FromDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="IDScales" Type="int" Nullable="false" />
+          <Property Name="PackageType" Type="varchar" MaxLength="50" />
+          <Property Name="BatchNo" Type="varchar" MaxLength="50" />
+          <Property Name="UuTien" Type="int" Nullable="false" />
+          <Property Name="TamNgung" Type="bit" Nullable="false" />
+          <Property Name="HoanThanh" Type="bit" Nullable="false" />
+          <Property Name="SoBaoDaSanXuat" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblConfigLinkSync">
+          <Key>
+            <PropertyRef Name="Value" />
+          </Key>
+          <Property Name="Value" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblConfigScales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IPServer" Type="varchar" MaxLength="50" />
+          <Property Name="PortServer" Type="varchar" MaxLength="10" />
+          <Property Name="MaxSpeed" Type="int" />
+          <Property Name="DataBits" Type="varchar" MaxLength="30" />
+          <Property Name="Parity" Type="varchar" MaxLength="50" />
+          <Property Name="StopBits" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TypeEncode" Type="nvarchar" MaxLength="20" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+          <Property Name="Note" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="tblItems">
+          <Key>
+            <PropertyRef Name="ItemNo" />
+          </Key>
+          <Property Name="ItemNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemName" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="tblLicenseKeys">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hardware" Type="varchar" MaxLength="500" />
+          <Property Name="CPUInfo" Type="varchar" MaxLength="500" />
+          <Property Name="RequestKey" Type="varchar" MaxLength="500" />
+          <Property Name="RequestDate" Type="datetime" />
+          <Property Name="ProductKey" Type="varchar" MaxLength="500" />
+          <Property Name="ActiveDate" Type="datetime" />
+          <Property Name="ComputerName" Type="nvarchar" MaxLength="100" />
+          <Property Name="UserUse" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblLichSuSanXuatBigbagJutBag">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QRCode" Type="varchar" MaxLength="50" />
+          <Property Name="LOT" Type="varchar" MaxLength="50" />
+          <Property Name="CropYear" Type="varchar" MaxLength="10" />
+          <Property Name="ItemCode" Type="varchar" MaxLength="50" />
+          <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="PackageType" Type="varchar" MaxLength="50" />
+          <Property Name="IDScales" Type="int" Nullable="false" />
+          <Property Name="IDConfig" Type="int" Nullable="false" />
+          <Property Name="BatchNo" Type="varchar" MaxLength="50" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="50" />
+          <Property Name="SanPhamTuCan" Type="nvarchar" MaxLength="200" />
+          <Property Name="SoLotTuCan" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="WH_ChiTietNhapKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Document" Type="varchar" MaxLength="30" />
+          <Property Name="Date" Type="date" />
+          <Property Name="QRCode" Type="varchar" MaxLength="30" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="30" />
+          <Property Name="Lot" Type="varchar" MaxLength="30" />
+          <Property Name="Certificate" Type="varchar" MaxLength="30" />
+          <Property Name="PackageType" Type="varchar" MaxLength="30" />
+          <Property Name="PackageCode" Type="varchar" MaxLength="30" />
+          <Property Name="GrossWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NetWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="QRCodeQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="BinCode" Type="varchar" MaxLength="30" />
+          <Property Name="Note" Type="nvarchar" MaxLength="500" />
+          <Property Name="Sample" Type="bit" />
+          <Property Name="Type" Type="varchar" MaxLength="30" />
+          <Property Name="IDPhieuNhap" Type="int" Nullable="false" />
+          <Property Name="Thoigian" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Ca" Type="int" Nullable="false" />
+          <Property Name="Del" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="WH_ChiTietXuatKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WeightNote" Type="varchar" MaxLength="30" />
+          <Property Name="DocumentNo" Type="varchar" MaxLength="30" />
+          <Property Name="Date" Type="date" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="30" />
+          <Property Name="QRCode" Type="varchar" MaxLength="30" />
+          <Property Name="QRCodeQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Lot" Type="varchar" MaxLength="30" />
+          <Property Name="Certificate" Type="varchar" MaxLength="30" />
+          <Property Name="BinCode" Type="varchar" MaxLength="30" />
+          <Property Name="PackageType" Type="varchar" MaxLength="30" />
+          <Property Name="GrossWeight" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PackageCode" Type="varchar" MaxLength="30" />
+          <Property Name="Note" Type="nvarchar" MaxLength="500" />
+          <Property Name="Type" Type="varchar" MaxLength="30" />
+          <Property Name="IDPhieuXuat" Type="int" Nullable="false" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="30" />
+          <Property Name="IDLenhSanXuat" Type="int" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Thoigian" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Ca" Type="int" Nullable="false" />
+          <Property Name="LoaiXuat" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Del" Type="bit" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WH_TonKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QRCode" Type="varchar" MaxLength="30" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="30" />
+          <Property Name="Lot" Type="varchar" MaxLength="30" />
+          <Property Name="PackageType" Type="varchar" MaxLength="30" />
+          <Property Name="PackageCode" Type="varchar" MaxLength="30" />
+          <Property Name="QRCodeQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="BinCode" Type="varchar" MaxLength="30" />
+          <Property Name="Sample" Type="bit" />
+          <Property Name="LotQty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Certificate" Type="nvarchar" MaxLength="50" />
+          <Property Name="CropYear" Type="varchar" MaxLength="10" />
+          <Property Name="Exported" Type="bit" />
+          <Property Name="TruckQty" Type="int" />
+        </EntityType>
+        <Function Name="SP_CheckLicense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CPU" Type="varchar" Mode="In" />
+          <Parameter Name="Hardware" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="DBACOMModelStoreContainer">
+          <EntitySet Name="ChiTiet_LenhGiaoHang" EntityType="Self.ChiTiet_LenhGiaoHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Chitiet_LenhSanXuat" EntityType="Self.Chitiet_LenhSanXuat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChiTietSoanHang" EntityType="Self.ChiTietSoanHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Certificate" EntityType="Self.DM_Certificate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_CropYear" EntityType="Self.DM_CropYear" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_KhachHang" EntityType="Self.DM_KhachHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_LenhGiaoHang" EntityType="Self.DM_LenhGiaoHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_LenhSanXuat" EntityType="Self.DM_LenhSanXuat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_LoaiBao" EntityType="Self.DM_LoaiBao" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_LoaiPhieuGiam" EntityType="Self.DM_LoaiPhieuGiam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Location" EntityType="Self.DM_Location" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Lot" EntityType="Self.DM_Lot" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_NhaVanChuyen" EntityType="Self.DM_NhaVanChuyen" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Packing" EntityType="Self.DM_Packing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_PhieuCanCau" EntityType="Self.DM_PhieuCanCau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_PhieuNhap" EntityType="Self.DM_PhieuNhap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_PhieuXuat" EntityType="Self.DM_PhieuXuat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Pile" EntityType="Self.DM_Pile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_PurchaseContract" EntityType="Self.DM_PurchaseContract" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_VatTu" EntityType="Self.DM_VatTu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HIS_Phieucancau" EntityType="Self.HIS_Phieucancau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HT_NGUOIDUNG" EntityType="Self.HT_NGUOIDUNG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IMG_PhieuCanCau" EntityType="Self.IMG_PhieuCanCau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Log_PhieuCanCau" EntityType="Self.Log_PhieuCanCau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblBigBagConfig" EntityType="Self.tblBigBagConfig" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblConfigLinkSync" EntityType="Self.tblConfigLinkSync" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblConfigScales" EntityType="Self.tblConfigScales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblItems" EntityType="Self.tblItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblLicenseKeys" EntityType="Self.tblLicenseKeys" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblLichSuSanXuatBigbagJutBag" EntityType="Self.tblLichSuSanXuatBigbagJutBag" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WH_ChiTietNhapKho" EntityType="Self.WH_ChiTietNhapKho" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WH_ChiTietXuatKho" EntityType="Self.WH_ChiTietXuatKho" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WH_TonKho" EntityType="Self.WH_TonKho" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DM_Vitri" EntityType="Self.DM_Vitri" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[DM_Vitri].[Code] AS [Code], 
+[DM_Vitri].[Vitri] AS [Vitri]
+FROM [dbo].[DM_Vitri] AS [DM_Vitri]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="HT_HETHONG" EntityType="Self.HT_HETHONG" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[HT_HETHONG].[ID] AS [ID], 
+[HT_HETHONG].[TENCOQUAN] AS [TENCOQUAN], 
+[HT_HETHONG].[DIACHI] AS [DIACHI], 
+[HT_HETHONG].[DIENTHOAI] AS [DIENTHOAI], 
+[HT_HETHONG].[FAX] AS [FAX], 
+[HT_HETHONG].[MAIL] AS [MAIL], 
+[HT_HETHONG].[WEBSITE] AS [WEBSITE], 
+[HT_HETHONG].[DIADIEM] AS [DIADIEM], 
+[HT_HETHONG].[LOCATIONCODE] AS [LOCATIONCODE]
+FROM [dbo].[HT_HETHONG] AS [HT_HETHONG]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBACOMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DBACOMEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="tblConfigLinkSync" EntityType="DBACOMModel.tblConfigLinkSync" />
+          <EntitySet Name="HT_HETHONG" EntityType="DBACOMModel.HT_HETHONG" />
+          <EntitySet Name="ChiTiet_LenhGiaoHang" EntityType="DBACOMModel.ChiTiet_LenhGiaoHang" />
+          <EntitySet Name="ChiTietSoanHang" EntityType="DBACOMModel.ChiTietSoanHang" />
+          <EntitySet Name="DM_KhachHang" EntityType="DBACOMModel.DM_KhachHang" />
+          <EntitySet Name="DM_LenhGiaoHang" EntityType="DBACOMModel.DM_LenhGiaoHang" />
+          <EntitySet Name="DM_LenhSanXuat" EntityType="DBACOMModel.DM_LenhSanXuat" />
+          <EntitySet Name="DM_Location" EntityType="DBACOMModel.DM_Location" />
+          <EntitySet Name="DM_NhaVanChuyen" EntityType="DBACOMModel.DM_NhaVanChuyen" />
+          <EntitySet Name="DM_Packing" EntityType="DBACOMModel.DM_Packing" />
+          <EntitySet Name="DM_Pile" EntityType="DBACOMModel.DM_Pile" />
+          <EntitySet Name="DM_VatTu" EntityType="DBACOMModel.DM_VatTu" />
+          <EntitySet Name="DM_Vitri" EntityType="DBACOMModel.DM_Vitri" />
+          <EntitySet Name="IMG_PhieuCanCau" EntityType="DBACOMModel.IMG_PhieuCanCau" />
+          <EntitySet Name="tblItems" EntityType="DBACOMModel.tblItems" />
+          <EntitySet Name="DM_Certificate" EntityType="DBACOMModel.DM_Certificate" />
+          <EntitySet Name="DM_CropYear" EntityType="DBACOMModel.DM_CropYear" />
+          <EntitySet Name="DM_LoaiBao" EntityType="DBACOMModel.DM_LoaiBao" />
+          <EntitySet Name="tblConfigScale" EntityType="DBACOMModel.tblConfigScale" />
+          <EntitySet Name="DM_PurchaseContract" EntityType="DBACOMModel.DM_PurchaseContract" />
+          <EntitySet Name="HT_NGUOIDUNG" EntityType="DBACOMModel.HT_NGUOIDUNG" />
+          <FunctionImport Name="SP_CheckLicense" ReturnType="Collection(String)">
+            <Parameter Name="CPU" Mode="In" Type="String" />
+            <Parameter Name="Hardware" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="tblBigBagConfig" EntityType="DBACOMModel.tblBigBagConfig" />
+          <EntitySet Name="tblLicenseKey" EntityType="DBACOMModel.tblLicenseKey" />
+          <EntitySet Name="Chitiet_LenhSanXuat" EntityType="DBACOMModel.Chitiet_LenhSanXuat" />
+          <EntitySet Name="DM_PhieuCanCau" EntityType="DBACOMModel.DM_PhieuCanCau" />
+          <EntitySet Name="tblLichSuSanXuatBigbagJutBag" EntityType="DBACOMModel.tblLichSuSanXuatBigbagJutBag" />
+          <EntitySet Name="HIS_Phieucancau" EntityType="DBACOMModel.HIS_Phieucancau" />
+          <EntitySet Name="DM_PhieuNhap" EntityType="DBACOMModel.DM_PhieuNhap" />
+          <EntitySet Name="DM_PhieuXuat" EntityType="DBACOMModel.DM_PhieuXuat" />
+          <EntitySet Name="WH_ChiTietNhapKho" EntityType="DBACOMModel.WH_ChiTietNhapKho" />
+          <EntitySet Name="DM_LoaiPhieuGiam" EntityType="DBACOMModel.DM_LoaiPhieuGiam" />
+          <EntitySet Name="Log_PhieuCanCau" EntityType="DBACOMModel.Log_PhieuCanCau" />
+          <EntitySet Name="WH_TonKho" EntityType="DBACOMModel.WH_TonKho" />
+          <EntitySet Name="DM_Lot" EntityType="DBACOMModel.DM_Lot" />
+          <EntitySet Name="WH_ChiTietXuatKho" EntityType="DBACOMModel.WH_ChiTietXuatKho" />
+        </EntityContainer>
+        <EntityType Name="tblConfigLinkSync">
+          <Key>
+            <PropertyRef Name="Value" />
+          </Key>
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HT_HETHONG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TENCOQUAN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DIACHI" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DIENTHOAI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="WEBSITE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DIADIEM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LOCATIONCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ChiTiet_LenhGiaoHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostingDate" Type="DateTime" Precision="0" />
+          <Property Name="SaleOrderCalNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SaleContractNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CertificationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LocationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PackingUnit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PackingUnitName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LineNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QtyPicked" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ChiTietSoanHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QRCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Datetime" Type="DateTime" Precision="3" />
+          <Property Name="DocumentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WeightNote" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDBatchDetail" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DM_KhachHang">
+          <Key>
+            <PropertyRef Name="MaKhachHang" />
+          </Key>
+          <Property Name="MaKhachHang" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TenKhachHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_LenhGiaoHang">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SaleOrderCalNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PostingDate" Type="DateTime" Precision="0" />
+          <Property Name="SaleContractNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_LenhSanXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostingDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="BatchNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_Location">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="DM_NhaVanChuyen">
+          <Key>
+            <PropertyRef Name="MaNhaVanChuyen" />
+          </Key>
+          <Property Name="MaNhaVanChuyen" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TenNhaVanChuyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_Packing">
+          <Key>
+            <PropertyRef Name="PackageCode" />
+          </Key>
+          <Property Name="PackageType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PackageCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PackageDesc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="PackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Format" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="SoBao" Type="Int32" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="DM_Pile">
+          <Key>
+            <PropertyRef Name="BinCode" />
+          </Key>
+          <Property Name="BinCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_VatTu">
+          <Key>
+            <PropertyRef Name="MaSanPham" />
+          </Key>
+          <Property Name="MaSanPham" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TenSanPham" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_Vitri">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="Int32" Nullable="false" />
+          <Property Name="Vitri" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="IMG_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WeightNote" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IMG1" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="IMG2" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="IMG3" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="IMG4" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblItems">
+          <Key>
+            <PropertyRef Name="ItemNo" />
+          </Key>
+          <Property Name="ItemNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ItemName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_Certificate">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ten" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_CropYear">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ten" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_LoaiBao">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Loai" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblConfigScale">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IPServer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PortServer" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="MaxSpeed" Type="Int32" />
+          <Property Name="DataBits" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Parity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StopBits" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TypeEncode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_PurchaseContract">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContractNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VendorNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VendorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContractDate" Type="DateTime" Precision="0" />
+          <Property Name="LocationCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LocationName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Cert" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CropYear" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ContractNetWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="UnitOfMeasure" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WeightNoteNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HT_NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="NGUOIDUNG" />
+          </Key>
+          <Property Name="NGUOIDUNG" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TAIKHOAN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MATKHAU" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HOTEN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HOATDONG" Type="Boolean" />
+          <Property Name="KIEUGIAODIEN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GHICHU" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="QUYEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MENU_NGANG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MENU_DOC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DANH_MUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LINH_VUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="QUYENPHANQUYEN" Type="Boolean" Nullable="false" />
+          <Property Name="PathHinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblBigBagConfig">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LOT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Precision="0" Nullable="false" />
+          <Property Name="Shift" Type="Int32" />
+          <Property Name="Bag" Type="Int32" />
+          <Property Name="CropYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FromDate" Type="DateTime" Precision="3" />
+          <Property Name="ToDate" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="IDScales" Type="Int32" Nullable="false" />
+          <Property Name="PackageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BatchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UuTien" Type="Int32" Nullable="false" />
+          <Property Name="TamNgung" Type="Boolean" Nullable="false" />
+          <Property Name="HoanThanh" Type="Boolean" Nullable="false" />
+          <Property Name="SoBaoDaSanXuat" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblLicenseKey">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hardware" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CPUInfo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="RequestKey" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="RequestDate" Type="DateTime" Precision="3" />
+          <Property Name="ProductKey" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ActiveDate" Type="DateTime" Precision="3" />
+          <Property Name="ComputerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UserUse" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Chitiet_LenhSanXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostingDate" Type="DateTime" Precision="0" />
+          <Property Name="BatchNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LocationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PalletQty" Type="Int32" />
+          <Property Name="PackingUnitCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="LineNo" Type="Int32" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="PDAUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QtyPicked" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LocationName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="WeightNote" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="VehicleNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WeightType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContractNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TransporterCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VendorCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VendorName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="LocationCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DateIn" Type="DateTime" Precision="3" />
+          <Property Name="DateOut" Type="DateTime" Precision="3" />
+          <Property Name="FirstWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SecondWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GrossWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TruckTare" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NetWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ExportNav" Type="Boolean" />
+          <Property Name="Del" Type="Boolean" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PDAUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PackageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ArrayQRCode" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+          <Property Name="Certificate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PackageCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblLichSuSanXuatBigbagJutBag">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QRCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CropYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PackageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IDScales" Type="Int32" Nullable="false" />
+          <Property Name="IDConfig" Type="Int32" Nullable="false" />
+          <Property Name="BatchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WeightNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SanPhamTuCan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SoLotTuCan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HIS_Phieucancau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_WeightNote" Type="Int32" />
+          <Property Name="Dateupdate" Type="DateTime" Precision="3" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Desc" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Loai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ghichu" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DM_PhieuNhap">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostingDate" Type="DateTime" Precision="0" />
+          <Property Name="WeightNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VendorName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="VendorCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContractNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NetWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Del" Type="Boolean" Nullable="false" />
+          <Property Name="KhaiBao_SoBao" Type="Boolean" />
+          <Property Name="NhapTrucTiep" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="DM_PhieuXuat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostingDate" Type="DateTime" Precision="0" />
+          <Property Name="WeightNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VendorName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="VendorCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContractNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ID_LenhSX" Type="Int32" />
+          <Property Name="Del" Type="Boolean" Nullable="false" />
+          <Property Name="KhaiBao_SoBao" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="WH_ChiTietNhapKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Document" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="QRCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Certificate" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PackageType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PackageCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="GrossWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NetWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="QRCodeQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="BinCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Sample" Type="Boolean" />
+          <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IDPhieuNhap" Type="Int32" Nullable="false" />
+          <Property Name="Thoigian" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Ca" Type="Int32" Nullable="false" />
+          <Property Name="Del" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DM_LoaiPhieuGiam">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="LoaiGiamKho" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NAV" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Log_PhieuCanCau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WeightNote" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ThoiGian" Type="DateTime" Precision="3" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ghichu" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="LanCan" Type="Int32" />
+          <Property Name="SoCanBanDau" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SoSauKhiSua" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Loai" Type="Int32" />
+        </EntityType>
+        <EntityType Name="WH_TonKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QRCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Lot" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PackageType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PackageCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="QRCodeQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="BinCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Sample" Type="Boolean" />
+          <Property Name="LotQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Certificate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CropYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Exported" Type="Boolean" />
+          <Property Name="TruckQty" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DM_Lot">
+          <Key>
+            <PropertyRef Name="Lot" />
+          </Key>
+          <Property Name="Lot" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Bag" Type="Int32" />
+          <Property Name="CropYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ItemCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="Note" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Shift" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="BatchNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PackingUnitCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Cer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NGUOIDUNG1" Type="Int32" Nullable="false" />
+          <Property Name="NGAY1" Type="DateTime" Precision="0" />
+          <Property Name="MAY1" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NGUOIDUNG2" Type="Int32" Nullable="false" />
+          <Property Name="NGAY2" Type="DateTime" Precision="0" />
+          <Property Name="MAY2" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="WH_ChiTietXuatKho">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WeightNote" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="ItemNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="QRCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="QRCodeQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Lot" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Certificate" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="BinCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PackageType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="GrossWeight" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TruckQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalPackageQty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PackageCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IDPhieuXuat" Type="Int32" Nullable="false" />
+          <Property Name="LocationCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="IDLenhSanXuat" Type="Int32" />
+          <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Thoigian" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Ca" Type="Int32" Nullable="false" />
+          <Property Name="LoaiXuat" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Del" Type="Boolean" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBACOMModelStoreContainer" CdmEntityContainer="DBACOMEntities" >
+          <EntitySetMapping Name="tblConfigLinkSync">
+            <EntityTypeMapping TypeName="DBACOMModel.tblConfigLinkSync">
+              <MappingFragment StoreEntitySet="tblConfigLinkSync">
+                <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HT_HETHONG">
+            <EntityTypeMapping TypeName="DBACOMModel.HT_HETHONG">
+              <MappingFragment StoreEntitySet="HT_HETHONG">
+                <ScalarProperty Name="LOCATIONCODE" ColumnName="LOCATIONCODE" />
+                <ScalarProperty Name="DIADIEM" ColumnName="DIADIEM" />
+                <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="DIENTHOAI" ColumnName="DIENTHOAI" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="TENCOQUAN" ColumnName="TENCOQUAN" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChiTiet_LenhGiaoHang">
+            <EntityTypeMapping TypeName="DBACOMModel.ChiTiet_LenhGiaoHang">
+              <MappingFragment StoreEntitySet="ChiTiet_LenhGiaoHang">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="QtyPicked" ColumnName="QtyPicked" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="PackingUnitName" ColumnName="PackingUnitName" />
+                <ScalarProperty Name="PackingUnit" ColumnName="PackingUnit" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="CertificationCode" ColumnName="CertificationCode" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="SaleContractNo" ColumnName="SaleContractNo" />
+                <ScalarProperty Name="SaleOrderCalNo" ColumnName="SaleOrderCalNo" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChiTietSoanHang">
+            <EntityTypeMapping TypeName="DBACOMModel.ChiTietSoanHang">
+              <MappingFragment StoreEntitySet="ChiTietSoanHang">
+                <ScalarProperty Name="IDBatchDetail" ColumnName="IDBatchDetail" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="DocumentNo" ColumnName="DocumentNo" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_KhachHang">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_KhachHang">
+              <MappingFragment StoreEntitySet="DM_KhachHang">
+                <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+                <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_LenhGiaoHang">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_LenhGiaoHang">
+              <MappingFragment StoreEntitySet="DM_LenhGiaoHang">
+                <ScalarProperty Name="SaleContractNo" ColumnName="SaleContractNo" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="SaleOrderCalNo" ColumnName="SaleOrderCalNo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_LenhSanXuat">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_LenhSanXuat">
+              <MappingFragment StoreEntitySet="DM_LenhSanXuat">
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Location">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Location">
+              <MappingFragment StoreEntitySet="DM_Location">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_NhaVanChuyen">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_NhaVanChuyen">
+              <MappingFragment StoreEntitySet="DM_NhaVanChuyen">
+                <ScalarProperty Name="TenNhaVanChuyen" ColumnName="TenNhaVanChuyen" />
+                <ScalarProperty Name="MaNhaVanChuyen" ColumnName="MaNhaVanChuyen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Packing">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Packing">
+              <MappingFragment StoreEntitySet="DM_Packing">
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="SoBao" ColumnName="SoBao" />
+                <ScalarProperty Name="Format" ColumnName="Format" />
+                <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+                <ScalarProperty Name="PackageDesc" ColumnName="PackageDesc" />
+                <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Pile">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Pile">
+              <MappingFragment StoreEntitySet="DM_Pile">
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_VatTu">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_VatTu">
+              <MappingFragment StoreEntitySet="DM_VatTu">
+                <ScalarProperty Name="TenSanPham" ColumnName="TenSanPham" />
+                <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Vitri">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Vitri">
+              <MappingFragment StoreEntitySet="DM_Vitri">
+                <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IMG_PhieuCanCau">
+            <EntityTypeMapping TypeName="DBACOMModel.IMG_PhieuCanCau">
+              <MappingFragment StoreEntitySet="IMG_PhieuCanCau">
+                <ScalarProperty Name="IMG4" ColumnName="IMG4" />
+                <ScalarProperty Name="IMG3" ColumnName="IMG3" />
+                <ScalarProperty Name="IMG2" ColumnName="IMG2" />
+                <ScalarProperty Name="IMG1" ColumnName="IMG1" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblItems">
+            <EntityTypeMapping TypeName="DBACOMModel.tblItems">
+              <MappingFragment StoreEntitySet="tblItems">
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Certificate">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Certificate">
+              <MappingFragment StoreEntitySet="DM_Certificate">
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_CropYear">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_CropYear">
+              <MappingFragment StoreEntitySet="DM_CropYear">
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_LoaiBao">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_LoaiBao">
+              <MappingFragment StoreEntitySet="DM_LoaiBao">
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Loai" ColumnName="Loai" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblConfigScale">
+            <EntityTypeMapping TypeName="DBACOMModel.tblConfigScale">
+              <MappingFragment StoreEntitySet="tblConfigScales">
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="TypeEncode" ColumnName="TypeEncode" />
+                <ScalarProperty Name="StopBits" ColumnName="StopBits" />
+                <ScalarProperty Name="Parity" ColumnName="Parity" />
+                <ScalarProperty Name="DataBits" ColumnName="DataBits" />
+                <ScalarProperty Name="MaxSpeed" ColumnName="MaxSpeed" />
+                <ScalarProperty Name="PortServer" ColumnName="PortServer" />
+                <ScalarProperty Name="IPServer" ColumnName="IPServer" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_PurchaseContract">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_PurchaseContract">
+              <MappingFragment StoreEntitySet="DM_PurchaseContract">
+                <ScalarProperty Name="WeightNoteNo" ColumnName="WeightNoteNo" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+                <ScalarProperty Name="ContractNetWeight" ColumnName="ContractNetWeight" />
+                <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+                <ScalarProperty Name="Cert" ColumnName="Cert" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="VendorNo" ColumnName="VendorNo" />
+                <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HT_NGUOIDUNG">
+            <EntityTypeMapping TypeName="DBACOMModel.HT_NGUOIDUNG">
+              <MappingFragment StoreEntitySet="HT_NGUOIDUNG">
+                <ScalarProperty Name="PathHinhAnh" ColumnName="PathHinhAnh" />
+                <ScalarProperty Name="QUYENPHANQUYEN" ColumnName="QUYENPHANQUYEN" />
+                <ScalarProperty Name="LINH_VUC" ColumnName="LINH_VUC" />
+                <ScalarProperty Name="DANH_MUC" ColumnName="DANH_MUC" />
+                <ScalarProperty Name="MENU_DOC" ColumnName="MENU_DOC" />
+                <ScalarProperty Name="MENU_NGANG" ColumnName="MENU_NGANG" />
+                <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+                <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+                <ScalarProperty Name="KIEUGIAODIEN" ColumnName="KIEUGIAODIEN" />
+                <ScalarProperty Name="HOATDONG" ColumnName="HOATDONG" />
+                <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+                <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+                <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+                <ScalarProperty Name="NGUOIDUNG" ColumnName="NGUOIDUNG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_CheckLicense" FunctionName="DBACOMModel.Store.SP_CheckLicense" />
+          <EntitySetMapping Name="tblBigBagConfig">
+            <EntityTypeMapping TypeName="DBACOMModel.tblBigBagConfig">
+              <MappingFragment StoreEntitySet="tblBigBagConfig">
+                <ScalarProperty Name="SoBaoDaSanXuat" ColumnName="SoBaoDaSanXuat" />
+                <ScalarProperty Name="HoanThanh" ColumnName="HoanThanh" />
+                <ScalarProperty Name="TamNgung" ColumnName="TamNgung" />
+                <ScalarProperty Name="UuTien" ColumnName="UuTien" />
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="IDScales" ColumnName="IDScales" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+                <ScalarProperty Name="Bag" ColumnName="Bag" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="LOT" ColumnName="LOT" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLicenseKey">
+            <EntityTypeMapping TypeName="DBACOMModel.tblLicenseKey">
+              <MappingFragment StoreEntitySet="tblLicenseKeys">
+                <ScalarProperty Name="UserUse" ColumnName="UserUse" />
+                <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+                <ScalarProperty Name="ActiveDate" ColumnName="ActiveDate" />
+                <ScalarProperty Name="ProductKey" ColumnName="ProductKey" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="RequestKey" ColumnName="RequestKey" />
+                <ScalarProperty Name="CPUInfo" ColumnName="CPUInfo" />
+                <ScalarProperty Name="Hardware" ColumnName="Hardware" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Chitiet_LenhSanXuat">
+            <EntityTypeMapping TypeName="DBACOMModel.Chitiet_LenhSanXuat">
+              <MappingFragment StoreEntitySet="Chitiet_LenhSanXuat">
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="QtyPicked" ColumnName="QtyPicked" />
+                <ScalarProperty Name="PDAUser" ColumnName="PDAUser" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="PackingUnitCode" ColumnName="PackingUnitCode" />
+                <ScalarProperty Name="PalletQty" ColumnName="PalletQty" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_PhieuCanCau">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuCanCau">
+              <MappingFragment StoreEntitySet="DM_PhieuCanCau">
+                <ScalarProperty Name="UserName2" ColumnName="UserName2" />
+                <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+                <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+                <ScalarProperty Name="ArrayQRCode" ColumnName="ArrayQRCode" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="PDAUser" ColumnName="PDAUser" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Del" ColumnName="Del" />
+                <ScalarProperty Name="ExportNav" ColumnName="ExportNav" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+                <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+                <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+                <ScalarProperty Name="TruckTare" ColumnName="TruckTare" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+                <ScalarProperty Name="SecondWeight" ColumnName="SecondWeight" />
+                <ScalarProperty Name="FirstWeight" ColumnName="FirstWeight" />
+                <ScalarProperty Name="DateOut" ColumnName="DateOut" />
+                <ScalarProperty Name="DateIn" ColumnName="DateIn" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="TransporterCode" ColumnName="TransporterCode" />
+                <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+                <ScalarProperty Name="WeightType" ColumnName="WeightType" />
+                <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLichSuSanXuatBigbagJutBag">
+            <EntityTypeMapping TypeName="DBACOMModel.tblLichSuSanXuatBigbagJutBag">
+              <MappingFragment StoreEntitySet="tblLichSuSanXuatBigbagJutBag">
+                <ScalarProperty Name="SoLotTuCan" ColumnName="SoLotTuCan" />
+                <ScalarProperty Name="SanPhamTuCan" ColumnName="SanPhamTuCan" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="IDConfig" ColumnName="IDConfig" />
+                <ScalarProperty Name="IDScales" ColumnName="IDScales" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+                <ScalarProperty Name="LOT" ColumnName="LOT" />
+                <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HIS_Phieucancau">
+            <EntityTypeMapping TypeName="DBACOMModel.HIS_Phieucancau">
+              <MappingFragment StoreEntitySet="HIS_Phieucancau">
+                <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+                <ScalarProperty Name="Loai" ColumnName="Loai" />
+                <ScalarProperty Name="Desc" ColumnName="Desc" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Dateupdate" ColumnName="Dateupdate" />
+                <ScalarProperty Name="ID_WeightNote" ColumnName="ID_WeightNote" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_PhieuNhap">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuNhap">
+              <MappingFragment StoreEntitySet="DM_PhieuNhap">
+                <ScalarProperty Name="NhapTrucTiep" ColumnName="NhapTrucTiep" />
+                <ScalarProperty Name="KhaiBao_SoBao" ColumnName="KhaiBao_SoBao" />
+                <ScalarProperty Name="Del" ColumnName="Del" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+                <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_PhieuXuat">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuXuat">
+              <MappingFragment StoreEntitySet="DM_PhieuXuat">
+                <ScalarProperty Name="KhaiBao_SoBao" ColumnName="KhaiBao_SoBao" />
+                <ScalarProperty Name="Del" ColumnName="Del" />
+                <ScalarProperty Name="ID_LenhSX" ColumnName="ID_LenhSX" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+                <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WH_ChiTietNhapKho">
+            <EntityTypeMapping TypeName="DBACOMModel.WH_ChiTietNhapKho">
+              <MappingFragment StoreEntitySet="WH_ChiTietNhapKho">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Del" ColumnName="Del" />
+                <ScalarProperty Name="Ca" ColumnName="Ca" />
+                <ScalarProperty Name="Thoigian" ColumnName="Thoigian" />
+                <ScalarProperty Name="IDPhieuNhap" ColumnName="IDPhieuNhap" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Sample" ColumnName="Sample" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+                <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+                <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+                <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+                <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+                <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Document" ColumnName="Document" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_LoaiPhieuGiam">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_LoaiPhieuGiam">
+              <MappingFragment StoreEntitySet="DM_LoaiPhieuGiam">
+                <ScalarProperty Name="NAV" ColumnName="NAV" />
+                <ScalarProperty Name="LoaiGiamKho" ColumnName="LoaiGiamKho" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Log_PhieuCanCau">
+            <EntityTypeMapping TypeName="DBACOMModel.Log_PhieuCanCau">
+              <MappingFragment StoreEntitySet="Log_PhieuCanCau">
+                <ScalarProperty Name="Loai" ColumnName="Loai" />
+                <ScalarProperty Name="SoSauKhiSua" ColumnName="SoSauKhiSua" />
+                <ScalarProperty Name="SoCanBanDau" ColumnName="SoCanBanDau" />
+                <ScalarProperty Name="LanCan" ColumnName="LanCan" />
+                <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WH_TonKho">
+            <EntityTypeMapping TypeName="DBACOMModel.WH_TonKho">
+              <MappingFragment StoreEntitySet="WH_TonKho">
+                <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+                <ScalarProperty Name="Exported" ColumnName="Exported" />
+                <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+                <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+                <ScalarProperty Name="LotQty" ColumnName="LotQty" />
+                <ScalarProperty Name="Sample" ColumnName="Sample" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+                <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_Lot">
+            <EntityTypeMapping TypeName="DBACOMModel.DM_Lot">
+              <MappingFragment StoreEntitySet="DM_Lot">
+                <ScalarProperty Name="MAY2" ColumnName="MAY2" />
+                <ScalarProperty Name="NGAY2" ColumnName="NGAY2" />
+                <ScalarProperty Name="NGUOIDUNG2" ColumnName="NGUOIDUNG2" />
+                <ScalarProperty Name="MAY1" ColumnName="MAY1" />
+                <ScalarProperty Name="NGAY1" ColumnName="NGAY1" />
+                <ScalarProperty Name="NGUOIDUNG1" ColumnName="NGUOIDUNG1" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Cer" ColumnName="Cer" />
+                <ScalarProperty Name="PackingUnitCode" ColumnName="PackingUnitCode" />
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Shift" ColumnName="Shift" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+                <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+                <ScalarProperty Name="Bag" ColumnName="Bag" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WH_ChiTietXuatKho">
+            <EntityTypeMapping TypeName="DBACOMModel.WH_ChiTietXuatKho">
+              <MappingFragment StoreEntitySet="WH_ChiTietXuatKho">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Del" ColumnName="Del" />
+                <ScalarProperty Name="LoaiXuat" ColumnName="LoaiXuat" />
+                <ScalarProperty Name="Ca" ColumnName="Ca" />
+                <ScalarProperty Name="Thoigian" ColumnName="Thoigian" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="IDLenhSanXuat" ColumnName="IDLenhSanXuat" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="IDPhieuXuat" ColumnName="IDPhieuXuat" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+                <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+                <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+                <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+                <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+                <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+                <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+                <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+                <ScalarProperty Name="Lot" ColumnName="Lot" />
+                <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+                <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DocumentNo" ColumnName="DocumentNo" />
+                <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

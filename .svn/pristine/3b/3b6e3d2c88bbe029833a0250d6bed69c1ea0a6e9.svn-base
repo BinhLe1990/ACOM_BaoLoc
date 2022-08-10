@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+using DevExpress.XtraEditors;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmNhaVanChuyen : DevExpress.XtraEditors.XtraForm
+    {
+        public frmNhaVanChuyen()
+        {
+            InitializeComponent();
+        }
+
+        private void Search()
+        {
+            this.Cursor = Cursors.WaitCursor;
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                var data = db.DM_NhaVanChuyen.Where(c => c.MaNhaVanChuyen.Contains(txtMaNhaVanChuyen.Text) && 
+                                                    c.TenNhaVanChuyen.Contains(txtTenNhaVanChuyen.Text)).ToList();
+                if (data != null)
+                {
+                    griDanhSach.DataSource = data;
+                    gridView1.BestFitColumns();
+                }
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        private void btnDongBo_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            string path = @"C:\Users\Dell\Downloads\NAV export files\ACOM_Transporters.txt";
+            string[] lines = File.ReadAllLines(path, Encoding.UTF8);
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                foreach (string line in lines)
+                {
+                    string[] MNVC = line.Split(';');
+                    string _MaNVC = MNVC[0].Replace("\"", "");
+                    string _TenNVC = MNVC[1].Replace("\"", "");
+                    db.DM_NhaVanChuyen.Add(new DM_NhaVanChuyen
+                    {
+                        MaNhaVanChuyen = _MaNVC,
+                        TenNhaVanChuyen = _TenNVC
+                    });
+                    var query = (from s in db.DM_NhaVanChuyen
+                                 where s.MaNhaVanChuyen == _MaNVC
+                                 select s).FirstOrDefault<DM_NhaVanChuyen>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                }
+                Search();
+            }
+            this.Cursor = Cursors.Default;
+            XtraMessageBox.Show("Cập nhật danh sách thành công");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void frmNhaVanChuyen_Load(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void gridView1_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+    }
+}

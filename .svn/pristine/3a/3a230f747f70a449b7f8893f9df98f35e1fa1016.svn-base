@@ -1,0 +1,311 @@
+﻿namespace DELFI_WHM.NET.QuanLy
+{
+    partial class frmLenhSanXuat
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLenhSanXuat));
+            this.btnDongBo = new DevExpress.XtraEditors.SimpleButton();
+            this.IML = new System.Windows.Forms.ImageList(this.components);
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.dtpDenNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.dtpTuNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.cboTrangThai = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.txtBatch = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.postingdate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.batchno = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SanPham = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LocationCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.BinCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PackingUnit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TrangThai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Quantity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LineNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.griDanhSach = new DevExpress.XtraGrid.GridControl();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
+            this.xtraTabControl3.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnDongBo
+            // 
+            this.btnDongBo.ImageIndex = 9;
+            this.btnDongBo.ImageList = this.IML;
+            this.btnDongBo.Location = new System.Drawing.Point(567, 76);
+            this.btnDongBo.Name = "btnDongBo";
+            this.btnDongBo.Size = new System.Drawing.Size(169, 26);
+            this.btnDongBo.TabIndex = 77;
+            this.btnDongBo.Tag = "ADD";
+            this.btnDongBo.Text = "Đồng bộ từ Navision về";
+            // 
+            // IML
+            // 
+            this.IML.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IML.ImageStream")));
+            this.IML.TransparentColor = System.Drawing.Color.Transparent;
+            this.IML.Images.SetKeyName(0, "Search.png");
+            this.IML.Images.SetKeyName(1, "Exit.png");
+            this.IML.Images.SetKeyName(2, "Save as.png");
+            this.IML.Images.SetKeyName(3, "Open file.png");
+            this.IML.Images.SetKeyName(4, "Redo.png");
+            this.IML.Images.SetKeyName(5, "Cancel.png");
+            this.IML.Images.SetKeyName(6, "btnSave.LargeGlyph.png");
+            this.IML.Images.SetKeyName(7, "postscript.png");
+            this.IML.Images.SetKeyName(8, "Print.png");
+            this.IML.Images.SetKeyName(9, "replaceItem1.LargeGlyph.png");
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageIndex = 0;
+            this.btnSearch.ImageList = this.IML;
+            this.btnSearch.Location = new System.Drawing.Point(463, 76);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(98, 26);
+            this.btnSearch.TabIndex = 76;
+            this.btnSearch.Text = "Tìm kiếm";
+            // 
+            // xtraTabControl3
+            // 
+            this.xtraTabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl3.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right;
+            this.xtraTabControl3.Location = new System.Drawing.Point(0, 6);
+            this.xtraTabControl3.Name = "xtraTabControl3";
+            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage3;
+            this.xtraTabControl3.Size = new System.Drawing.Size(1210, 130);
+            this.xtraTabControl3.TabIndex = 75;
+            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage3});
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.AutoScroll = true;
+            this.xtraTabPage3.Controls.Add(this.dtpDenNgay);
+            this.xtraTabPage3.Controls.Add(this.btnDongBo);
+            this.xtraTabPage3.Controls.Add(this.btnSearch);
+            this.xtraTabPage3.Controls.Add(this.dtpTuNgay);
+            this.xtraTabPage3.Controls.Add(this.cboTrangThai);
+            this.xtraTabPage3.Controls.Add(this.txtBatch);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1191, 124);
+            // 
+            // dtpDenNgay
+            // 
+            this.dtpDenNgay.iWidth = 65;
+            this.dtpDenNgay.Location = new System.Drawing.Point(271, 27);
+            this.dtpDenNgay.Name = "dtpDenNgay";
+            this.dtpDenNgay.sCaption = "Đến ngày:";
+            this.dtpDenNgay.Size = new System.Drawing.Size(184, 21);
+            this.dtpDenNgay.TabIndex = 50;
+            this.dtpDenNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 42, 53, 654);
+            this.dtpDenNgay.uValue = new System.DateTime(2020, 2, 14, 11, 42, 53, 654);
+            // 
+            // dtpTuNgay
+            // 
+            this.dtpTuNgay.iWidth = 90;
+            this.dtpTuNgay.Location = new System.Drawing.Point(40, 27);
+            this.dtpTuNgay.Name = "dtpTuNgay";
+            this.dtpTuNgay.sCaption = "Từ ngày:";
+            this.dtpTuNgay.Size = new System.Drawing.Size(212, 21);
+            this.dtpTuNgay.TabIndex = 50;
+            this.dtpTuNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 42, 53, 634);
+            this.dtpTuNgay.uValue = new System.DateTime(2020, 2, 14, 11, 42, 53, 634);
+            // 
+            // cboTrangThai
+            // 
+            this.cboTrangThai.iWidth = 90;
+            this.cboTrangThai.Location = new System.Drawing.Point(40, 54);
+            this.cboTrangThai.Name = "cboTrangThai";
+            this.cboTrangThai.sCaption = "Trạng thái:";
+            this.cboTrangThai.sField = "";
+            this.cboTrangThai.Size = new System.Drawing.Size(415, 21);
+            this.cboTrangThai.sNullText = "<Chọn trạng thái>";
+            this.cboTrangThai.TabIndex = 51;
+            this.cboTrangThai.uDisplayMember = "TrangThai";
+            this.cboTrangThai.uEditValue = null;
+            this.cboTrangThai.uTableName = "tblSanPham";
+            this.cboTrangThai.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboTrangThai.uValueMember = "TrangThai";
+            // 
+            // txtBatch
+            // 
+            this.txtBatch.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtBatch.iWidth = 90;
+            this.txtBatch.Location = new System.Drawing.Point(40, 81);
+            this.txtBatch.Name = "txtBatch";
+            this.txtBatch.sCaption = "Batch No.:";
+            this.txtBatch.SelectionStart = 0;
+            this.txtBatch.Size = new System.Drawing.Size(415, 21);
+            this.txtBatch.TabIndex = 0;
+            this.txtBatch.Tag = "..MaNhaCungCap";
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.postingdate,
+            this.batchno,
+            this.SanPham,
+            this.LocationCode,
+            this.BinCode,
+            this.PackingUnit,
+            this.TrangThai,
+            this.Quantity,
+            this.LineNo});
+            this.gridView1.GridControl = this.griDanhSach;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // postingdate
+            // 
+            this.postingdate.Caption = "Posting date";
+            this.postingdate.FieldName = "postingdate";
+            this.postingdate.Name = "postingdate";
+            this.postingdate.Visible = true;
+            this.postingdate.VisibleIndex = 0;
+            // 
+            // batchno
+            // 
+            this.batchno.Caption = "Batch No.";
+            this.batchno.FieldName = "batchno";
+            this.batchno.Name = "batchno";
+            this.batchno.Visible = true;
+            this.batchno.VisibleIndex = 1;
+            // 
+            // SanPham
+            // 
+            this.SanPham.Caption = "Sản phẩm";
+            this.SanPham.FieldName = "SanPham";
+            this.SanPham.Name = "SanPham";
+            this.SanPham.Visible = true;
+            this.SanPham.VisibleIndex = 2;
+            // 
+            // LocationCode
+            // 
+            this.LocationCode.Caption = "Location code";
+            this.LocationCode.FieldName = "LocationCode";
+            this.LocationCode.Name = "LocationCode";
+            this.LocationCode.Visible = true;
+            this.LocationCode.VisibleIndex = 3;
+            // 
+            // BinCode
+            // 
+            this.BinCode.Caption = "Bin code";
+            this.BinCode.FieldName = "BinCode";
+            this.BinCode.Name = "BinCode";
+            this.BinCode.Visible = true;
+            this.BinCode.VisibleIndex = 4;
+            // 
+            // PackingUnit
+            // 
+            this.PackingUnit.Caption = "Packing unit";
+            this.PackingUnit.FieldName = "PackingUnit";
+            this.PackingUnit.Name = "PackingUnit";
+            this.PackingUnit.Visible = true;
+            this.PackingUnit.VisibleIndex = 5;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.Caption = "Trạng thái";
+            this.TrangThai.FieldName = "TrangThai";
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.Visible = true;
+            this.TrangThai.VisibleIndex = 6;
+            // 
+            // Quantity
+            // 
+            this.Quantity.Caption = "Quantity";
+            this.Quantity.FieldName = "Quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Visible = true;
+            this.Quantity.VisibleIndex = 7;
+            // 
+            // LineNo
+            // 
+            this.LineNo.Caption = "LineNo";
+            this.LineNo.FieldName = "LineNo";
+            this.LineNo.Name = "LineNo";
+            this.LineNo.Visible = true;
+            this.LineNo.VisibleIndex = 8;
+            // 
+            // griDanhSach
+            // 
+            this.griDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.griDanhSach.Location = new System.Drawing.Point(1, 148);
+            this.griDanhSach.MainView = this.gridView1;
+            this.griDanhSach.Name = "griDanhSach";
+            this.griDanhSach.Size = new System.Drawing.Size(1183, 461);
+            this.griDanhSach.TabIndex = 78;
+            this.griDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // frmLenhSanXuat
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 611);
+            this.Controls.Add(this.griDanhSach);
+            this.Controls.Add(this.xtraTabControl3);
+            this.Name = "frmLenhSanXuat";
+            this.Text = "LỆNH SẢN XUẤT";
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
+            this.xtraTabControl3.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private DevExpress.XtraEditors.SimpleButton btnDongBo;
+        private System.Windows.Forms.ImageList IML;
+        private DELFI_User_Control.uDateTimePicker dtpDenNgay;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DELFI_User_Control.uDateTimePicker dtpTuNgay;
+        private DELFI_User_Control.uComboBox cboTrangThai;
+        private DELFI_User_Control.uTextBox txtBatch;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn postingdate;
+        private DevExpress.XtraGrid.Columns.GridColumn batchno;
+        private DevExpress.XtraGrid.Columns.GridColumn SanPham;
+        private DevExpress.XtraGrid.Columns.GridColumn LocationCode;
+        private DevExpress.XtraGrid.Columns.GridColumn BinCode;
+        private DevExpress.XtraGrid.Columns.GridColumn PackingUnit;
+        private DevExpress.XtraGrid.Columns.GridColumn TrangThai;
+        private DevExpress.XtraGrid.Columns.GridColumn Quantity;
+        private DevExpress.XtraGrid.Columns.GridColumn LineNo;
+        private DevExpress.XtraGrid.GridControl griDanhSach;
+    }
+}

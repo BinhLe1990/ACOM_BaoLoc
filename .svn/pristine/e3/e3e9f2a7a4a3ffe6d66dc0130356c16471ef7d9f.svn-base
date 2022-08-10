@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using DELFI_WHM.NET.Models;
+using System.Linq;
+
+
+namespace DELFI_WHM.NET.FrHT.FrND
+{
+    public partial class frmDanhSachNguoiDung : DevExpress.XtraEditors.XtraForm
+    {
+        DevExpress.XtraBars.Ribbon.RibbonControl _ribControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+        DevExpress.XtraBars.Ribbon.ApplicationMenu _ApMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+        DELFI_Class.DELFIConnection cnn = new DELFI_Class.DELFIConnection(Program.sServerName, Program.sUserName, Program.SPassword, Program.sDatabaseName);
+        public frmDanhSachNguoiDung(DevExpress.XtraBars.Ribbon.RibbonControl ribControl, DevExpress.XtraBars.Ribbon.ApplicationMenu ApMenu)
+        {
+            InitializeComponent();
+            _ribControl = ribControl;
+            _ApMenu = ApMenu;
+        }
+
+        private void frmDanhSachNguoiDung_Load(object sender, EventArgs e)
+        {
+            using (DBACOMEntities db=new DBACOMEntities())
+            {
+                var data = db.HT_NGUOIDUNG.Where(c => c.HOATDONG == null ? false : true == true).ToList();
+                if (data!=null)
+                {
+                    gridDanhSach.DataSource = data;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,609 @@
+﻿namespace DELFI_WHM.NET.NhapKho
+{
+    partial class frmNhapKhoThanhPham
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhapKhoThanhPham));
+            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.uComboBox7 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uComboBox6 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uComboBox5 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uTextBox8 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox9 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox6 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uComboBox3 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uComboBox2 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uComboBox4 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uComboBox1 = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uTextBox2 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.cboTrangThai = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.uTextBox3 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox5 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox7 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox4 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.uTextBox1 = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.txtSoHopDong = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.SoPhieu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayTao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Quantity = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NhaVanChuyen = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SanPham = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Loai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.QuyCach = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoLot = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Cropyear = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Certification = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.griDanhSach = new DevExpress.XtraGrid.GridControl();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
+            this.IML = new System.Windows.Forms.ImageList(this.components);
+            this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInTem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTach = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
+            this.xtraTabControl3.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // xtraTabControl3
+            // 
+            this.xtraTabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl3.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right;
+            this.xtraTabControl3.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl3.Name = "xtraTabControl3";
+            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage3;
+            this.xtraTabControl3.Size = new System.Drawing.Size(1233, 238);
+            this.xtraTabControl3.TabIndex = 94;
+            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage3});
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.AutoScroll = true;
+            this.xtraTabPage3.Controls.Add(this.groupBox1);
+            this.xtraTabPage3.Controls.Add(this.uComboBox3);
+            this.xtraTabPage3.Controls.Add(this.uComboBox2);
+            this.xtraTabPage3.Controls.Add(this.uComboBox4);
+            this.xtraTabPage3.Controls.Add(this.uComboBox1);
+            this.xtraTabPage3.Controls.Add(this.uTextBox2);
+            this.xtraTabPage3.Controls.Add(this.cboTrangThai);
+            this.xtraTabPage3.Controls.Add(this.uTextBox3);
+            this.xtraTabPage3.Controls.Add(this.uTextBox5);
+            this.xtraTabPage3.Controls.Add(this.uTextBox7);
+            this.xtraTabPage3.Controls.Add(this.uTextBox4);
+            this.xtraTabPage3.Controls.Add(this.uTextBox1);
+            this.xtraTabPage3.Controls.Add(this.txtSoHopDong);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1214, 232);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.uComboBox7);
+            this.groupBox1.Controls.Add(this.uComboBox6);
+            this.groupBox1.Controls.Add(this.uComboBox5);
+            this.groupBox1.Controls.Add(this.uTextBox8);
+            this.groupBox1.Controls.Add(this.uTextBox9);
+            this.groupBox1.Controls.Add(this.uTextBox6);
+            this.groupBox1.Location = new System.Drawing.Point(628, 7);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(345, 176);
+            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin xe";
+            // 
+            // uComboBox7
+            // 
+            this.uComboBox7.iWidth = 90;
+            this.uComboBox7.Location = new System.Drawing.Point(6, 128);
+            this.uComboBox7.Name = "uComboBox7";
+            this.uComboBox7.sCaption = "Trạng thái:";
+            this.uComboBox7.sField = "";
+            this.uComboBox7.Size = new System.Drawing.Size(324, 21);
+            this.uComboBox7.sNullText = "<Chọn>";
+            this.uComboBox7.TabIndex = 51;
+            this.uComboBox7.uDisplayMember = "TrangThai";
+            this.uComboBox7.uEditValue = null;
+            this.uComboBox7.uTableName = "tblSanPham";
+            this.uComboBox7.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox7.uValueMember = "TrangThai";
+            // 
+            // uComboBox6
+            // 
+            this.uComboBox6.iWidth = 90;
+            this.uComboBox6.Location = new System.Drawing.Point(6, 47);
+            this.uComboBox6.Name = "uComboBox6";
+            this.uComboBox6.sCaption = "Khách hàng";
+            this.uComboBox6.sField = "";
+            this.uComboBox6.Size = new System.Drawing.Size(324, 21);
+            this.uComboBox6.sNullText = "<Chọn>";
+            this.uComboBox6.TabIndex = 51;
+            this.uComboBox6.uDisplayMember = "TrangThai";
+            this.uComboBox6.uEditValue = null;
+            this.uComboBox6.uTableName = "tblSanPham";
+            this.uComboBox6.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox6.uValueMember = "TrangThai";
+            // 
+            // uComboBox5
+            // 
+            this.uComboBox5.iWidth = 90;
+            this.uComboBox5.Location = new System.Drawing.Point(6, 20);
+            this.uComboBox5.Name = "uComboBox5";
+            this.uComboBox5.sCaption = "Nhà vận chuyển:";
+            this.uComboBox5.sField = "";
+            this.uComboBox5.Size = new System.Drawing.Size(324, 21);
+            this.uComboBox5.sNullText = "<Chọn>";
+            this.uComboBox5.TabIndex = 51;
+            this.uComboBox5.uDisplayMember = "TrangThai";
+            this.uComboBox5.uEditValue = null;
+            this.uComboBox5.uTableName = "tblSanPham";
+            this.uComboBox5.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox5.uValueMember = "TrangThai";
+            // 
+            // uTextBox8
+            // 
+            this.uTextBox8.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox8.iWidth = 1;
+            this.uTextBox8.Location = new System.Drawing.Point(216, 74);
+            this.uTextBox8.Name = "uTextBox8";
+            this.uTextBox8.sCaption = "";
+            this.uTextBox8.SelectionStart = 0;
+            this.uTextBox8.Size = new System.Drawing.Size(114, 21);
+            this.uTextBox8.TabIndex = 0;
+            this.uTextBox8.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox9
+            // 
+            this.uTextBox9.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox9.iWidth = 90;
+            this.uTextBox9.Location = new System.Drawing.Point(6, 101);
+            this.uTextBox9.Name = "uTextBox9";
+            this.uTextBox9.sCaption = "Trọng lượng:";
+            this.uTextBox9.SelectionStart = 0;
+            this.uTextBox9.Size = new System.Drawing.Size(324, 21);
+            this.uTextBox9.TabIndex = 0;
+            this.uTextBox9.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox6
+            // 
+            this.uTextBox6.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox6.iWidth = 90;
+            this.uTextBox6.Location = new System.Drawing.Point(6, 74);
+            this.uTextBox6.Name = "uTextBox6";
+            this.uTextBox6.sCaption = "Số xe:";
+            this.uTextBox6.SelectionStart = 0;
+            this.uTextBox6.Size = new System.Drawing.Size(204, 21);
+            this.uTextBox6.TabIndex = 0;
+            this.uTextBox6.Tag = "..MaNhaCungCap";
+            // 
+            // uComboBox3
+            // 
+            this.uComboBox3.iWidth = 55;
+            this.uComboBox3.Location = new System.Drawing.Point(251, 135);
+            this.uComboBox3.Name = "uComboBox3";
+            this.uComboBox3.sCaption = "Quy cách:";
+            this.uComboBox3.sField = "";
+            this.uComboBox3.Size = new System.Drawing.Size(158, 21);
+            this.uComboBox3.sNullText = "<Chọn>";
+            this.uComboBox3.TabIndex = 51;
+            this.uComboBox3.uDisplayMember = "TrangThai";
+            this.uComboBox3.uEditValue = null;
+            this.uComboBox3.uTableName = "tblSanPham";
+            this.uComboBox3.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox3.uValueMember = "TrangThai";
+            // 
+            // uComboBox2
+            // 
+            this.uComboBox2.Location = new System.Drawing.Point(40, 135);
+            this.uComboBox2.Name = "uComboBox2";
+            this.uComboBox2.sCaption = "Loại:";
+            this.uComboBox2.sField = "";
+            this.uComboBox2.Size = new System.Drawing.Size(205, 21);
+            this.uComboBox2.sNullText = "<Chọn>";
+            this.uComboBox2.TabIndex = 51;
+            this.uComboBox2.uDisplayMember = "TrangThai";
+            this.uComboBox2.uEditValue = null;
+            this.uComboBox2.uTableName = "tblSanPham";
+            this.uComboBox2.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox2.uValueMember = "TrangThai";
+            // 
+            // uComboBox4
+            // 
+            this.uComboBox4.iWidth = 70;
+            this.uComboBox4.Location = new System.Drawing.Point(349, 108);
+            this.uComboBox4.Name = "uComboBox4";
+            this.uComboBox4.sCaption = "Certification:";
+            this.uComboBox4.sField = "";
+            this.uComboBox4.Size = new System.Drawing.Size(217, 21);
+            this.uComboBox4.sNullText = "<Chọn>";
+            this.uComboBox4.TabIndex = 51;
+            this.uComboBox4.uDisplayMember = "TrangThai";
+            this.uComboBox4.uEditValue = null;
+            this.uComboBox4.uTableName = "tblSanPham";
+            this.uComboBox4.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox4.uValueMember = "TrangThai";
+            // 
+            // uComboBox1
+            // 
+            this.uComboBox1.iWidth = 70;
+            this.uComboBox1.Location = new System.Drawing.Point(349, 27);
+            this.uComboBox1.Name = "uComboBox1";
+            this.uComboBox1.sCaption = "Số lot:";
+            this.uComboBox1.sField = "";
+            this.uComboBox1.Size = new System.Drawing.Size(217, 21);
+            this.uComboBox1.sNullText = "<Chọn>";
+            this.uComboBox1.TabIndex = 51;
+            this.uComboBox1.uDisplayMember = "TrangThai";
+            this.uComboBox1.uEditValue = null;
+            this.uComboBox1.uTableName = "tblSanPham";
+            this.uComboBox1.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.uComboBox1.uValueMember = "TrangThai";
+            // 
+            // uTextBox2
+            // 
+            this.uTextBox2.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox2.Location = new System.Drawing.Point(40, 54);
+            this.uTextBox2.Name = "uTextBox2";
+            this.uTextBox2.sCaption = "Ngày tạo phiếu:";
+            this.uTextBox2.SelectionStart = 0;
+            this.uTextBox2.Size = new System.Drawing.Size(257, 21);
+            this.uTextBox2.TabIndex = 0;
+            this.uTextBox2.Tag = "..MaNhaCungCap";
+            // 
+            // cboTrangThai
+            // 
+            this.cboTrangThai.Location = new System.Drawing.Point(40, 108);
+            this.cboTrangThai.Name = "cboTrangThai";
+            this.cboTrangThai.sCaption = "Sản phẩm:";
+            this.cboTrangThai.sField = "";
+            this.cboTrangThai.Size = new System.Drawing.Size(257, 21);
+            this.cboTrangThai.sNullText = "<Chọn sản phẩm>";
+            this.cboTrangThai.TabIndex = 51;
+            this.cboTrangThai.uDisplayMember = "TrangThai";
+            this.cboTrangThai.uEditValue = null;
+            this.cboTrangThai.uTableName = "tblSanPham";
+            this.cboTrangThai.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboTrangThai.uValueMember = "TrangThai";
+            // 
+            // uTextBox3
+            // 
+            this.uTextBox3.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox3.Location = new System.Drawing.Point(40, 162);
+            this.uTextBox3.Name = "uTextBox3";
+            this.uTextBox3.sCaption = "Ghi chú";
+            this.uTextBox3.SelectionStart = 0;
+            this.uTextBox3.Size = new System.Drawing.Size(526, 21);
+            this.uTextBox3.TabIndex = 0;
+            this.uTextBox3.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox5
+            // 
+            this.uTextBox5.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox5.iWidth = 70;
+            this.uTextBox5.Location = new System.Drawing.Point(349, 81);
+            this.uTextBox5.Name = "uTextBox5";
+            this.uTextBox5.sCaption = "Crop year:";
+            this.uTextBox5.SelectionStart = 0;
+            this.uTextBox5.Size = new System.Drawing.Size(217, 21);
+            this.uTextBox5.TabIndex = 0;
+            this.uTextBox5.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox7
+            // 
+            this.uTextBox7.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox7.iWidth = 55;
+            this.uTextBox7.Location = new System.Drawing.Point(427, 135);
+            this.uTextBox7.Name = "uTextBox7";
+            this.uTextBox7.sCaption = "Số lượng:";
+            this.uTextBox7.SelectionStart = 0;
+            this.uTextBox7.Size = new System.Drawing.Size(139, 21);
+            this.uTextBox7.TabIndex = 0;
+            this.uTextBox7.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox4
+            // 
+            this.uTextBox4.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox4.iWidth = 70;
+            this.uTextBox4.Location = new System.Drawing.Point(349, 54);
+            this.uTextBox4.Name = "uTextBox4";
+            this.uTextBox4.sCaption = "Bag:";
+            this.uTextBox4.SelectionStart = 0;
+            this.uTextBox4.Size = new System.Drawing.Size(217, 21);
+            this.uTextBox4.TabIndex = 0;
+            this.uTextBox4.Tag = "..MaNhaCungCap";
+            // 
+            // uTextBox1
+            // 
+            this.uTextBox1.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.uTextBox1.Location = new System.Drawing.Point(40, 27);
+            this.uTextBox1.Name = "uTextBox1";
+            this.uTextBox1.sCaption = "Nhập/quét mã code:";
+            this.uTextBox1.SelectionStart = 0;
+            this.uTextBox1.Size = new System.Drawing.Size(257, 21);
+            this.uTextBox1.TabIndex = 0;
+            this.uTextBox1.Tag = "..MaNhaCungCap";
+            // 
+            // txtSoHopDong
+            // 
+            this.txtSoHopDong.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtSoHopDong.Location = new System.Drawing.Point(40, 81);
+            this.txtSoHopDong.Name = "txtSoHopDong";
+            this.txtSoHopDong.sCaption = "Số phiếu:";
+            this.txtSoHopDong.SelectionStart = 0;
+            this.txtSoHopDong.Size = new System.Drawing.Size(257, 21);
+            this.txtSoHopDong.TabIndex = 0;
+            this.txtSoHopDong.Tag = "..MaNhaCungCap";
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.SoPhieu,
+            this.NgayTao,
+            this.Quantity,
+            this.NhaVanChuyen,
+            this.SanPham,
+            this.Loai,
+            this.QuyCach,
+            this.SoLuong,
+            this.SoLot,
+            this.Cropyear,
+            this.Certification,
+            this.GhiChu});
+            this.gridView1.GridControl = this.griDanhSach;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // SoPhieu
+            // 
+            this.SoPhieu.Caption = "Số phiếu";
+            this.SoPhieu.Name = "SoPhieu";
+            this.SoPhieu.Visible = true;
+            this.SoPhieu.VisibleIndex = 0;
+            // 
+            // NgayTao
+            // 
+            this.NgayTao.Caption = "Ngày tạo";
+            this.NgayTao.Name = "NgayTao";
+            this.NgayTao.Visible = true;
+            this.NgayTao.VisibleIndex = 1;
+            // 
+            // Quantity
+            // 
+            this.Quantity.Caption = "Quantity (Kg)";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Visible = true;
+            this.Quantity.VisibleIndex = 2;
+            // 
+            // NhaVanChuyen
+            // 
+            this.NhaVanChuyen.Caption = "Nhà vận chuyển";
+            this.NhaVanChuyen.Name = "NhaVanChuyen";
+            this.NhaVanChuyen.Visible = true;
+            this.NhaVanChuyen.VisibleIndex = 3;
+            // 
+            // SanPham
+            // 
+            this.SanPham.Caption = "Sản phẩm";
+            this.SanPham.Name = "SanPham";
+            this.SanPham.Visible = true;
+            this.SanPham.VisibleIndex = 4;
+            // 
+            // Loai
+            // 
+            this.Loai.Caption = "Loại";
+            this.Loai.Name = "Loai";
+            this.Loai.Visible = true;
+            this.Loai.VisibleIndex = 5;
+            // 
+            // QuyCach
+            // 
+            this.QuyCach.Caption = "Quy cách";
+            this.QuyCach.Name = "QuyCach";
+            this.QuyCach.Visible = true;
+            this.QuyCach.VisibleIndex = 6;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.Caption = "Số lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Visible = true;
+            this.SoLuong.VisibleIndex = 7;
+            // 
+            // SoLot
+            // 
+            this.SoLot.Caption = "Số lot";
+            this.SoLot.Name = "SoLot";
+            this.SoLot.Visible = true;
+            this.SoLot.VisibleIndex = 8;
+            // 
+            // Cropyear
+            // 
+            this.Cropyear.Caption = "Crop year";
+            this.Cropyear.Name = "Cropyear";
+            this.Cropyear.Visible = true;
+            this.Cropyear.VisibleIndex = 9;
+            // 
+            // Certification
+            // 
+            this.Certification.Caption = "Certification";
+            this.Certification.Name = "Certification";
+            this.Certification.Visible = true;
+            this.Certification.VisibleIndex = 10;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.Caption = "Ghi chú";
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Visible = true;
+            this.GhiChu.VisibleIndex = 11;
+            // 
+            // griDanhSach
+            // 
+            this.griDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.griDanhSach.Location = new System.Drawing.Point(0, 287);
+            this.griDanhSach.MainView = this.gridView1;
+            this.griDanhSach.Name = "griDanhSach";
+            this.griDanhSach.Size = new System.Drawing.Size(1183, 325);
+            this.griDanhSach.TabIndex = 98;
+            this.griDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.ImageIndex = 5;
+            this.btnHuy.ImageList = this.IML;
+            this.btnHuy.Location = new System.Drawing.Point(300, 244);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(90, 26);
+            this.btnHuy.TabIndex = 96;
+            this.btnHuy.Tag = "ADD";
+            this.btnHuy.Text = "Hủy";
+            // 
+            // IML
+            // 
+            this.IML.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IML.ImageStream")));
+            this.IML.TransparentColor = System.Drawing.Color.Transparent;
+            this.IML.Images.SetKeyName(0, "Search.png");
+            this.IML.Images.SetKeyName(1, "Exit.png");
+            this.IML.Images.SetKeyName(2, "Save as.png");
+            this.IML.Images.SetKeyName(3, "Open file.png");
+            this.IML.Images.SetKeyName(4, "Redo.png");
+            this.IML.Images.SetKeyName(5, "Cancel.png");
+            this.IML.Images.SetKeyName(6, "btnSave.LargeGlyph.png");
+            this.IML.Images.SetKeyName(7, "postscript.png");
+            this.IML.Images.SetKeyName(8, "Print.png");
+            this.IML.Images.SetKeyName(9, "replaceItem1.LargeGlyph.png");
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.ImageIndex = 6;
+            this.btnRefresh.ImageList = this.IML;
+            this.btnRefresh.Location = new System.Drawing.Point(204, 244);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(90, 26);
+            this.btnRefresh.TabIndex = 97;
+            this.btnRefresh.Tag = "ADD";
+            this.btnRefresh.Text = "Lưu";
+            // 
+            // btnInTem
+            // 
+            this.btnInTem.ImageIndex = 8;
+            this.btnInTem.ImageList = this.IML;
+            this.btnInTem.Location = new System.Drawing.Point(108, 244);
+            this.btnInTem.Name = "btnInTem";
+            this.btnInTem.Size = new System.Drawing.Size(90, 26);
+            this.btnInTem.TabIndex = 95;
+            this.btnInTem.Text = "In tem";
+            // 
+            // btnTach
+            // 
+            this.btnTach.ImageIndex = 1;
+            this.btnTach.ImageList = this.IML;
+            this.btnTach.Location = new System.Drawing.Point(12, 244);
+            this.btnTach.Name = "btnTach";
+            this.btnTach.Size = new System.Drawing.Size(90, 26);
+            this.btnTach.TabIndex = 99;
+            this.btnTach.Tag = "ADD";
+            this.btnTach.Text = "Thêm";
+            // 
+            // frmNhapKhoThanhPham
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 611);
+            this.Controls.Add(this.xtraTabControl3);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnInTem);
+            this.Controls.Add(this.griDanhSach);
+            this.Controls.Add(this.btnTach);
+            this.Name = "frmNhapKhoThanhPham";
+            this.Text = "Nhập kho từ nhà cung cấp";
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
+            this.xtraTabControl3.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DELFI_User_Control.uComboBox uComboBox3;
+        private DELFI_User_Control.uComboBox uComboBox2;
+        private DELFI_User_Control.uComboBox uComboBox1;
+        private DELFI_User_Control.uTextBox uTextBox2;
+        private DELFI_User_Control.uComboBox cboTrangThai;
+        private DELFI_User_Control.uTextBox uTextBox3;
+        private DELFI_User_Control.uTextBox uTextBox5;
+        private DELFI_User_Control.uTextBox uTextBox4;
+        private DELFI_User_Control.uTextBox txtSoHopDong;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DELFI_User_Control.uTextBox uTextBox1;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl griDanhSach;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
+        private System.Windows.Forms.ImageList IML;
+        private DevExpress.XtraEditors.SimpleButton btnRefresh;
+        private DevExpress.XtraEditors.SimpleButton btnInTem;
+        private DevExpress.XtraEditors.SimpleButton btnTach;
+        private DELFI_User_Control.uComboBox uComboBox4;
+        private DELFI_User_Control.uTextBox uTextBox7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private DELFI_User_Control.uComboBox uComboBox7;
+        private DELFI_User_Control.uComboBox uComboBox6;
+        private DELFI_User_Control.uComboBox uComboBox5;
+        private DELFI_User_Control.uTextBox uTextBox8;
+        private DELFI_User_Control.uTextBox uTextBox9;
+        private DELFI_User_Control.uTextBox uTextBox6;
+        private DevExpress.XtraGrid.Columns.GridColumn SoPhieu;
+        private DevExpress.XtraGrid.Columns.GridColumn NgayTao;
+        private DevExpress.XtraGrid.Columns.GridColumn Quantity;
+        private DevExpress.XtraGrid.Columns.GridColumn NhaVanChuyen;
+        private DevExpress.XtraGrid.Columns.GridColumn SanPham;
+        private DevExpress.XtraGrid.Columns.GridColumn Loai;
+        private DevExpress.XtraGrid.Columns.GridColumn QuyCach;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLuong;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLot;
+        private DevExpress.XtraGrid.Columns.GridColumn Cropyear;
+        private DevExpress.XtraGrid.Columns.GridColumn Certification;
+        private DevExpress.XtraGrid.Columns.GridColumn GhiChu;
+    }
+}

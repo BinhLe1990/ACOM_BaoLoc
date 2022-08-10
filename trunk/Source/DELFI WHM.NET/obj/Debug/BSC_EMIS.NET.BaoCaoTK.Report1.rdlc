@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="duy_bsc_sql2005_BSC_EMIS_NET_dbo">
+      <rd:DataSourceID>b189b59c-3088-4463-928b-0be52c0fc968</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=.\sql2005;Initial Catalog=BSC_EMIS.NET;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>48a11849-9b72-486d-867d-aa366fedb6c9</rd:ReportID>
+  <DataSets>
+    <DataSet Name="ID_BSC_EMIS_NETDataSet_View_1">
+      <Fields>
+        <Field Name="HinhAnh">
+          <DataField>HinhAnh</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="SinhVien">
+          <DataField>SinhVien</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaSinhVien">
+          <DataField>MaSinhVien</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HoTen">
+          <DataField>HoTen</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoiSinh">
+          <DataField>NoiSinh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NGAY_SINH">
+          <DataField>NGAY_SINH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaLoaiDaoTao">
+          <DataField>MaLoaiDaoTao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaBacDaoTao">
+          <DataField>MaBacDaoTao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaNganh">
+          <DataField>MaNganh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaKhoa">
+          <DataField>MaKhoa</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaLopHoc">
+          <DataField>MaLopHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaKhoaHoc">
+          <DataField>MaKhoaHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenKhoaHoc">
+          <DataField>TenKhoaHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenLoaiDaoTao">
+          <DataField>TenLoaiDaoTao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenBacDaoTao">
+          <DataField>TenBacDaoTao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenNganh">
+          <DataField>TenNganh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenKhoa">
+          <DataField>TenKhoa</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenLopHoc">
+          <DataField>TenLopHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HocKy">
+          <DataField>HocKy</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NamHoc">
+          <DataField>NamHoc</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="MaMonHoc">
+          <DataField>MaMonHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TenMonHoc">
+          <DataField>TenMonHoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DiemChuyenCan">
+          <DataField>DiemChuyenCan</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DiemThiGiuaKy">
+          <DataField>DiemThiGiuaKy</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Thi1">
+          <DataField>Thi1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Thi2">
+          <DataField>Thi2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Thi3">
+          <DataField>Thi3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DiemLN">
+          <DataField>DiemLN</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TBM">
+          <DataField>TBM</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SoTinChi">
+          <DataField>SoTinChi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TruongKhoa">
+          <DataField>TruongKhoa</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GiaoVu">
+          <DataField>GiaoVu</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MonNo">
+          <DataField>MonNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DVHT_No">
+          <DataField>DVHT_No</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TenLoaiDiem">
+          <DataField>TenLoaiDiem</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIEM_QD">
+          <DataField>DIEM_QD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ThangDiem4">
+          <DataField>ThangDiem4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="KLTN_SoTinChi">
+          <DataField>KLTN_SoTinChi</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="KLTN_THANGDIEM4">
+          <DataField>KLTN_THANGDIEM4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="KLTN_DIEMCHU">
+          <DataField>KLTN_DIEMCHU</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>duy_bsc_sql2005_BSC_EMIS_NET_dbo</DataSourceName>
+        <CommandText>SELECT HinhAnh, SinhVien, MaSinhVien, HoTen, NoiSinh, NGAY_SINH, MaLoaiDaoTao, MaBacDaoTao, MaNganh, MaKhoa, MaLopHoc, MaKhoaHoc, TenKhoaHoc, TenLoaiDaoTao, TenBacDaoTao, TenNganh, TenKhoa, TenLopHoc, HocKy, NamHoc, MaMonHoc, TenMonHoc, DiemChuyenCan, DiemThiGiuaKy, Thi1, Thi2, Thi3, DiemLN, TBM, SoTinChi, TruongKhoa, GiaoVu, MonNo, DVHT_No, TenLoaiDiem, DIEM_QD, ThangDiem4, KLTN_SoTinChi, KLTN_THANGDIEM4, KLTN_DIEMCHU FROM dbo.View_1</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>_BSC_EMIS_NETDataSet</rd:DataSetName>
+        <rd:TableName>View_1</rd:TableName>
+        <rd:TableAdapterName>View_1TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6.5in</Width>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>1in</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>ID_BSC_EMIS_NETDataSet_View_1</DataSetName>
+        <RowGroupings>
+          <RowGrouping>
+            <Width>1in</Width>
+            <DynamicRows>
+              <Grouping Name="matrix1_HoTen">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!HoTen.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="HoTen">
+                  <rd:DefaultName>HoTen</rd:DefaultName>
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                  <ZIndex>1</ZIndex>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!HoTen.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+          </RowGrouping>
+        </RowGroupings>
+        <Top>0.75in</Top>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <Height>0.25in</Height>
+            <DynamicColumns>
+              <Grouping Name="matrix1_TenMonHoc">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!TenMonHoc.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="TenMonHoc">
+                  <rd:DefaultName>TenMonHoc</rd:DefaultName>
+                  <Style>
+                    <VerticalAlign>Middle</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!TenMonHoc.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <FixedHeader>true</FixedHeader>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>2in</Width>
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+              <ZIndex>3</ZIndex>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <MatrixRows>
+          <MatrixRow>
+            <Height>0.25in</Height>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="DiemLN">
+                    <rd:DefaultName>DiemLN</rd:DefaultName>
+                    <Style>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!DiemLN.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+          </MatrixRow>
+        </MatrixRows>
+        <Height>0.5in</Height>
+        <Left>0.625in</Left>
+      </Matrix>
+    </ReportItems>
+    <Height>2in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

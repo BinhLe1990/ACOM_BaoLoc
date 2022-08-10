@@ -1,0 +1,546 @@
+﻿namespace DELFI_WHM.NET.CauHinh
+{
+    partial class frmCauHinhCanTuDong
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCauHinhCanTuDong));
+            this.griDanhSach = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Can = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TuNgay = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DenNgay = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LenhSanXuat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SanPham = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Loai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.QuyCach = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SoLot = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Bag = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CropYear = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Active = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayTao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NguoiTao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dtpTuNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.cboCan = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.chkActive = new DevExpress.XtraEditors.CheckEdit();
+            this.dtpDenNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.cbQuyCach = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.cbLoai = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.cbSanPham = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.cbSoLot = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.cbLenhSanXuat = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.txtCropYear = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.txtBag = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.txtGhiChu = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.IML = new System.Windows.Forms.ImageList(this.components);
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLamLai = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInDanhSach = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
+            this.xtraTabControl3.SuspendLayout();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkActive.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // griDanhSach
+            // 
+            this.griDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.griDanhSach.Location = new System.Drawing.Point(1, 243);
+            this.griDanhSach.MainView = this.gridView1;
+            this.griDanhSach.Name = "griDanhSach";
+            this.griDanhSach.Size = new System.Drawing.Size(1183, 366);
+            this.griDanhSach.TabIndex = 49;
+            this.griDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.ID,
+            this.Can,
+            this.TuNgay,
+            this.DenNgay,
+            this.LenhSanXuat,
+            this.SanPham,
+            this.Loai,
+            this.QuyCach,
+            this.SoLot,
+            this.Bag,
+            this.CropYear,
+            this.Active,
+            this.GhiChu,
+            this.NgayTao,
+            this.NguoiTao});
+            this.gridView1.GridControl = this.griDanhSach;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // ID
+            // 
+            this.ID.Caption = "ID";
+            this.ID.FieldName = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = true;
+            this.ID.VisibleIndex = 0;
+            // 
+            // Can
+            // 
+            this.Can.Caption = "Cân";
+            this.Can.FieldName = "Can";
+            this.Can.Name = "Can";
+            this.Can.Visible = true;
+            this.Can.VisibleIndex = 3;
+            // 
+            // TuNgay
+            // 
+            this.TuNgay.Caption = "Từ ngày";
+            this.TuNgay.FieldName = "TuNgay";
+            this.TuNgay.Name = "TuNgay";
+            this.TuNgay.Visible = true;
+            this.TuNgay.VisibleIndex = 1;
+            // 
+            // DenNgay
+            // 
+            this.DenNgay.Caption = "Đến ngày";
+            this.DenNgay.FieldName = "DenNgay";
+            this.DenNgay.Name = "DenNgay";
+            this.DenNgay.Visible = true;
+            this.DenNgay.VisibleIndex = 2;
+            // 
+            // LenhSanXuat
+            // 
+            this.LenhSanXuat.Caption = "Lệnh sản xuất";
+            this.LenhSanXuat.FieldName = "LenhSanXuat";
+            this.LenhSanXuat.Name = "LenhSanXuat";
+            this.LenhSanXuat.Visible = true;
+            this.LenhSanXuat.VisibleIndex = 4;
+            // 
+            // SanPham
+            // 
+            this.SanPham.Caption = "Sản phẩm";
+            this.SanPham.FieldName = "SanPham";
+            this.SanPham.Name = "SanPham";
+            this.SanPham.Visible = true;
+            this.SanPham.VisibleIndex = 5;
+            // 
+            // Loai
+            // 
+            this.Loai.Caption = "Loại";
+            this.Loai.FieldName = "Loai";
+            this.Loai.Name = "Loai";
+            this.Loai.Visible = true;
+            this.Loai.VisibleIndex = 6;
+            // 
+            // QuyCach
+            // 
+            this.QuyCach.Caption = "Quy cách";
+            this.QuyCach.FieldName = "QuyCach";
+            this.QuyCach.Name = "QuyCach";
+            this.QuyCach.Visible = true;
+            this.QuyCach.VisibleIndex = 7;
+            // 
+            // SoLot
+            // 
+            this.SoLot.Caption = "Số lot";
+            this.SoLot.FieldName = "SoLot";
+            this.SoLot.Name = "SoLot";
+            this.SoLot.Visible = true;
+            this.SoLot.VisibleIndex = 8;
+            // 
+            // Bag
+            // 
+            this.Bag.Caption = "Bag";
+            this.Bag.FieldName = "Bag";
+            this.Bag.Name = "Bag";
+            this.Bag.Visible = true;
+            this.Bag.VisibleIndex = 9;
+            // 
+            // CropYear
+            // 
+            this.CropYear.Caption = "Crop year";
+            this.CropYear.FieldName = "CropYear";
+            this.CropYear.Name = "CropYear";
+            this.CropYear.Visible = true;
+            this.CropYear.VisibleIndex = 10;
+            // 
+            // Active
+            // 
+            this.Active.Caption = "Active";
+            this.Active.FieldName = "Active";
+            this.Active.Name = "Active";
+            this.Active.Visible = true;
+            this.Active.VisibleIndex = 11;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.Caption = "Ghi chú";
+            this.GhiChu.FieldName = "GhiChu";
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Visible = true;
+            this.GhiChu.VisibleIndex = 12;
+            // 
+            // NgayTao
+            // 
+            this.NgayTao.Caption = "Ngày tạo";
+            this.NgayTao.FieldName = "NgayTao";
+            this.NgayTao.Name = "NgayTao";
+            this.NgayTao.Visible = true;
+            this.NgayTao.VisibleIndex = 13;
+            // 
+            // NguoiTao
+            // 
+            this.NguoiTao.Caption = "Người tạo";
+            this.NguoiTao.FieldName = "NguoiTao";
+            this.NguoiTao.Name = "NguoiTao";
+            this.NguoiTao.Visible = true;
+            this.NguoiTao.VisibleIndex = 14;
+            // 
+            // dtpTuNgay
+            // 
+            this.dtpTuNgay.iWidth = 90;
+            this.dtpTuNgay.Location = new System.Drawing.Point(34, 54);
+            this.dtpTuNgay.Name = "dtpTuNgay";
+            this.dtpTuNgay.sCaption = "Từ ngày:";
+            this.dtpTuNgay.Size = new System.Drawing.Size(195, 21);
+            this.dtpTuNgay.TabIndex = 50;
+            this.dtpTuNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 45, 51, 997);
+            this.dtpTuNgay.uValue = new System.DateTime(2020, 2, 14, 11, 45, 51, 997);
+            // 
+            // cboCan
+            // 
+            this.cboCan.iWidth = 90;
+            this.cboCan.Location = new System.Drawing.Point(34, 27);
+            this.cboCan.Name = "cboCan";
+            this.cboCan.sCaption = "Chọn cân:";
+            this.cboCan.sColumnCaption = "Cân, Diễn giải";
+            this.cboCan.sField = "MaCan,TenCan";
+            this.cboCan.Size = new System.Drawing.Size(409, 21);
+            this.cboCan.TabIndex = 51;
+            this.cboCan.uDisplayMember = "TenCan";
+            this.cboCan.uEditValue = null;
+            this.cboCan.uTableName = "tblDanhSachCan";
+            this.cboCan.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboCan.uValueMember = "MaCan";
+            // 
+            // xtraTabControl3
+            // 
+            this.xtraTabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl3.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right;
+            this.xtraTabControl3.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl3.Name = "xtraTabControl3";
+            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage3;
+            this.xtraTabControl3.Size = new System.Drawing.Size(1210, 195);
+            this.xtraTabControl3.TabIndex = 52;
+            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage3});
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.AutoScroll = true;
+            this.xtraTabPage3.Controls.Add(this.chkActive);
+            this.xtraTabPage3.Controls.Add(this.dtpDenNgay);
+            this.xtraTabPage3.Controls.Add(this.dtpTuNgay);
+            this.xtraTabPage3.Controls.Add(this.cbQuyCach);
+            this.xtraTabPage3.Controls.Add(this.cbLoai);
+            this.xtraTabPage3.Controls.Add(this.cbSanPham);
+            this.xtraTabPage3.Controls.Add(this.cbSoLot);
+            this.xtraTabPage3.Controls.Add(this.cbLenhSanXuat);
+            this.xtraTabPage3.Controls.Add(this.cboCan);
+            this.xtraTabPage3.Controls.Add(this.txtCropYear);
+            this.xtraTabPage3.Controls.Add(this.txtBag);
+            this.xtraTabPage3.Controls.Add(this.txtGhiChu);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1191, 189);
+            // 
+            // chkActive
+            // 
+            this.chkActive.Location = new System.Drawing.Point(590, 137);
+            this.chkActive.Name = "chkActive";
+            this.chkActive.Properties.Caption = "Active (Tại mỗi thời điểm, 1 cân chỉ active 1 lần)";
+            this.chkActive.Size = new System.Drawing.Size(320, 19);
+            this.chkActive.TabIndex = 52;
+            this.chkActive.Tag = "..bHDKhoanBienChe";
+            // 
+            // dtpDenNgay
+            // 
+            this.dtpDenNgay.iWidth = 65;
+            this.dtpDenNgay.Location = new System.Drawing.Point(248, 54);
+            this.dtpDenNgay.Name = "dtpDenNgay";
+            this.dtpDenNgay.sCaption = "Đến ngày:";
+            this.dtpDenNgay.Size = new System.Drawing.Size(195, 21);
+            this.dtpDenNgay.TabIndex = 50;
+            this.dtpDenNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 45, 52, 35);
+            this.dtpDenNgay.uValue = new System.DateTime(2020, 2, 14, 11, 45, 52, 35);
+            // 
+            // cbQuyCach
+            // 
+            this.cbQuyCach.iWidth = 60;
+            this.cbQuyCach.Location = new System.Drawing.Point(732, 27);
+            this.cbQuyCach.Name = "cbQuyCach";
+            this.cbQuyCach.sCaption = "Quy cách:";
+            this.cbQuyCach.sColumnCaption = "Cân, Diễn giải";
+            this.cbQuyCach.sField = "MaCan,TenCan";
+            this.cbQuyCach.Size = new System.Drawing.Size(178, 21);
+            this.cbQuyCach.TabIndex = 51;
+            this.cbQuyCach.uDisplayMember = "TenCan";
+            this.cbQuyCach.uEditValue = null;
+            this.cbQuyCach.uTableName = "tblDanhSachCan";
+            this.cbQuyCach.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbQuyCach.uValueMember = "MaCan";
+            // 
+            // cbLoai
+            // 
+            this.cbLoai.iWidth = 90;
+            this.cbLoai.Location = new System.Drawing.Point(501, 27);
+            this.cbLoai.Name = "cbLoai";
+            this.cbLoai.sCaption = "Loại:";
+            this.cbLoai.sColumnCaption = "Loai";
+            this.cbLoai.sField = "Loai";
+            this.cbLoai.Size = new System.Drawing.Size(212, 21);
+            this.cbLoai.TabIndex = 51;
+            this.cbLoai.uDisplayMember = "Loai";
+            this.cbLoai.uEditValue = null;
+            this.cbLoai.uTableName = "tblLoai";
+            this.cbLoai.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbLoai.uValueMember = "Loai";
+            // 
+            // cbSanPham
+            // 
+            this.cbSanPham.iWidth = 90;
+            this.cbSanPham.Location = new System.Drawing.Point(34, 108);
+            this.cbSanPham.Name = "cbSanPham";
+            this.cbSanPham.sCaption = "Sản phẩm:";
+            this.cbSanPham.sColumnCaption = "Mã sản phẩm, Tên sản phẩm";
+            this.cbSanPham.sField = "MaSanPham,TenSanPham";
+            this.cbSanPham.Size = new System.Drawing.Size(409, 21);
+            this.cbSanPham.TabIndex = 51;
+            this.cbSanPham.uDisplayMember = "SanPham";
+            this.cbSanPham.uEditValue = null;
+            this.cbSanPham.uTableName = "tblSanPham";
+            this.cbSanPham.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbSanPham.uValueMember = "MaSanPham";
+            // 
+            // cbSoLot
+            // 
+            this.cbSoLot.iWidth = 90;
+            this.cbSoLot.Location = new System.Drawing.Point(501, 54);
+            this.cbSoLot.Name = "cbSoLot";
+            this.cbSoLot.sCaption = "Số lot:";
+            this.cbSoLot.sColumnCaption = "Cân, Diễn giải";
+            this.cbSoLot.sField = "MaCan,TenCan";
+            this.cbSoLot.Size = new System.Drawing.Size(409, 21);
+            this.cbSoLot.TabIndex = 51;
+            this.cbSoLot.uDisplayMember = "TenCan";
+            this.cbSoLot.uEditValue = null;
+            this.cbSoLot.uTableName = "tblDanhSachCan";
+            this.cbSoLot.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbSoLot.uValueMember = "MaCan";
+            // 
+            // cbLenhSanXuat
+            // 
+            this.cbLenhSanXuat.iWidth = 90;
+            this.cbLenhSanXuat.Location = new System.Drawing.Point(34, 81);
+            this.cbLenhSanXuat.Name = "cbLenhSanXuat";
+            this.cbLenhSanXuat.sCaption = "Lệnh sản xuất:";
+            this.cbLenhSanXuat.sColumnCaption = "Cân, Diễn giải";
+            this.cbLenhSanXuat.sField = "MaCan,TenCan";
+            this.cbLenhSanXuat.Size = new System.Drawing.Size(409, 21);
+            this.cbLenhSanXuat.TabIndex = 51;
+            this.cbLenhSanXuat.uDisplayMember = "TenCan";
+            this.cbLenhSanXuat.uEditValue = null;
+            this.cbLenhSanXuat.uTableName = "tblDanhSachCan";
+            this.cbLenhSanXuat.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbLenhSanXuat.uValueMember = "MaCan";
+            // 
+            // txtCropYear
+            // 
+            this.txtCropYear.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtCropYear.bIsReadOnly = true;
+            this.txtCropYear.iWidth = 90;
+            this.txtCropYear.Location = new System.Drawing.Point(501, 108);
+            this.txtCropYear.Name = "txtCropYear";
+            this.txtCropYear.sCaption = "Crop year:";
+            this.txtCropYear.SelectionStart = 0;
+            this.txtCropYear.Size = new System.Drawing.Size(409, 21);
+            this.txtCropYear.TabIndex = 0;
+            this.txtCropYear.Tag = "..MaNhaCungCap";
+            // 
+            // txtBag
+            // 
+            this.txtBag.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtBag.bIsReadOnly = true;
+            this.txtBag.iWidth = 90;
+            this.txtBag.Location = new System.Drawing.Point(501, 81);
+            this.txtBag.Name = "txtBag";
+            this.txtBag.sCaption = "Bag:";
+            this.txtBag.SelectionStart = 0;
+            this.txtBag.Size = new System.Drawing.Size(409, 21);
+            this.txtBag.TabIndex = 0;
+            this.txtBag.Tag = "..MaNhaCungCap";
+            // 
+            // txtGhiChu
+            // 
+            this.txtGhiChu.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtGhiChu.iWidth = 90;
+            this.txtGhiChu.Location = new System.Drawing.Point(34, 135);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.sCaption = "Ghi chú:";
+            this.txtGhiChu.SelectionStart = 0;
+            this.txtGhiChu.Size = new System.Drawing.Size(409, 21);
+            this.txtGhiChu.TabIndex = 0;
+            this.txtGhiChu.Tag = "..MaNhaCungCap";
+            // 
+            // IML
+            // 
+            this.IML.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IML.ImageStream")));
+            this.IML.TransparentColor = System.Drawing.Color.Transparent;
+            this.IML.Images.SetKeyName(0, "Search.png");
+            this.IML.Images.SetKeyName(1, "Exit.png");
+            this.IML.Images.SetKeyName(2, "Save as.png");
+            this.IML.Images.SetKeyName(3, "Open file.png");
+            this.IML.Images.SetKeyName(4, "Redo.png");
+            this.IML.Images.SetKeyName(5, "Cancel.png");
+            this.IML.Images.SetKeyName(6, "btnSave.LargeGlyph.png");
+            this.IML.Images.SetKeyName(7, "postscript.png");
+            this.IML.Images.SetKeyName(8, "Print.png");
+            this.IML.Images.SetKeyName(9, "replaceItem1.LargeGlyph.png");
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageIndex = 0;
+            this.btnSearch.ImageList = this.IML;
+            this.btnSearch.Location = new System.Drawing.Point(9, 201);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(100, 26);
+            this.btnSearch.TabIndex = 53;
+            this.btnSearch.Text = "Tìm kiếm";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.ImageIndex = 6;
+            this.btnLuu.ImageList = this.IML;
+            this.btnLuu.Location = new System.Drawing.Point(115, 201);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(90, 26);
+            this.btnLuu.TabIndex = 54;
+            this.btnLuu.Tag = "ADD";
+            this.btnLuu.Text = "Lưu";
+            // 
+            // btnLamLai
+            // 
+            this.btnLamLai.ImageIndex = 4;
+            this.btnLamLai.ImageList = this.IML;
+            this.btnLamLai.Location = new System.Drawing.Point(211, 201);
+            this.btnLamLai.Name = "btnLamLai";
+            this.btnLamLai.Size = new System.Drawing.Size(79, 26);
+            this.btnLamLai.TabIndex = 55;
+            this.btnLamLai.Text = "Làm lại";
+            // 
+            // btnInDanhSach
+            // 
+            this.btnInDanhSach.ImageIndex = 7;
+            this.btnInDanhSach.ImageList = this.IML;
+            this.btnInDanhSach.Location = new System.Drawing.Point(296, 201);
+            this.btnInDanhSach.Name = "btnInDanhSach";
+            this.btnInDanhSach.Size = new System.Drawing.Size(108, 26);
+            this.btnInDanhSach.TabIndex = 56;
+            this.btnInDanhSach.Text = "In danh sách";
+            // 
+            // frmCauHinhCanTuDong
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 611);
+            this.Controls.Add(this.btnInDanhSach);
+            this.Controls.Add(this.btnLamLai);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.xtraTabControl3);
+            this.Controls.Add(this.griDanhSach);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmCauHinhCanTuDong";
+            this.Text = "CẤU HÌNH CÂN TỰ ĐỘNG";
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
+            this.xtraTabControl3.ResumeLayout(false);
+            this.xtraTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chkActive.Properties)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraGrid.GridControl griDanhSach;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn ID;
+        private DevExpress.XtraGrid.Columns.GridColumn TuNgay;
+        private DevExpress.XtraGrid.Columns.GridColumn DenNgay;
+        private DELFI_User_Control.uDateTimePicker dtpTuNgay;
+        private DELFI_User_Control.uComboBox cboCan;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DELFI_User_Control.uTextBox txtGhiChu;
+        private DELFI_User_Control.uDateTimePicker dtpDenNgay;
+        private DELFI_User_Control.uComboBox cbLenhSanXuat;
+        private DELFI_User_Control.uComboBox cbSanPham;
+        private DevExpress.XtraEditors.CheckEdit chkActive;
+        private DELFI_User_Control.uComboBox cbQuyCach;
+        private DELFI_User_Control.uComboBox cbLoai;
+        private DELFI_User_Control.uComboBox cbSoLot;
+        private DELFI_User_Control.uTextBox txtCropYear;
+        private DELFI_User_Control.uTextBox txtBag;
+        private System.Windows.Forms.ImageList IML;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private DevExpress.XtraEditors.SimpleButton btnLuu;
+        private DevExpress.XtraEditors.SimpleButton btnLamLai;
+        private DevExpress.XtraEditors.SimpleButton btnInDanhSach;
+        private DevExpress.XtraGrid.Columns.GridColumn Can;
+        private DevExpress.XtraGrid.Columns.GridColumn LenhSanXuat;
+        private DevExpress.XtraGrid.Columns.GridColumn SanPham;
+        private DevExpress.XtraGrid.Columns.GridColumn Loai;
+        private DevExpress.XtraGrid.Columns.GridColumn QuyCach;
+        private DevExpress.XtraGrid.Columns.GridColumn SoLot;
+        private DevExpress.XtraGrid.Columns.GridColumn Bag;
+        private DevExpress.XtraGrid.Columns.GridColumn CropYear;
+        private DevExpress.XtraGrid.Columns.GridColumn Active;
+        private DevExpress.XtraGrid.Columns.GridColumn GhiChu;
+        private DevExpress.XtraGrid.Columns.GridColumn NgayTao;
+        private DevExpress.XtraGrid.Columns.GridColumn NguoiTao;
+    }
+}

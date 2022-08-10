@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBACOMModelStoreContainer" CdmEntityContainer="DBACOMEntities">
+    <EntitySetMapping Name="tblConfigLinkSync">
+      <EntityTypeMapping TypeName="DBACOMModel.tblConfigLinkSync">
+        <MappingFragment StoreEntitySet="tblConfigLinkSync">
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HT_HETHONG">
+      <EntityTypeMapping TypeName="DBACOMModel.HT_HETHONG">
+        <MappingFragment StoreEntitySet="HT_HETHONG">
+          <ScalarProperty Name="LOCATIONCODE" ColumnName="LOCATIONCODE" />
+          <ScalarProperty Name="DIADIEM" ColumnName="DIADIEM" />
+          <ScalarProperty Name="WEBSITE" ColumnName="WEBSITE" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="DIENTHOAI" ColumnName="DIENTHOAI" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="TENCOQUAN" ColumnName="TENCOQUAN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTiet_LenhGiaoHang">
+      <EntityTypeMapping TypeName="DBACOMModel.ChiTiet_LenhGiaoHang">
+        <MappingFragment StoreEntitySet="ChiTiet_LenhGiaoHang">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="QtyPicked" ColumnName="QtyPicked" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PackingUnitName" ColumnName="PackingUnitName" />
+          <ScalarProperty Name="PackingUnit" ColumnName="PackingUnit" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="CertificationCode" ColumnName="CertificationCode" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="SaleContractNo" ColumnName="SaleContractNo" />
+          <ScalarProperty Name="SaleOrderCalNo" ColumnName="SaleOrderCalNo" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietSoanHang">
+      <EntityTypeMapping TypeName="DBACOMModel.ChiTietSoanHang">
+        <MappingFragment StoreEntitySet="ChiTietSoanHang">
+          <ScalarProperty Name="IDBatchDetail" ColumnName="IDBatchDetail" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DocumentNo" ColumnName="DocumentNo" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_KhachHang">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_KhachHang">
+        <MappingFragment StoreEntitySet="DM_KhachHang">
+          <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+          <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_LenhGiaoHang">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_LenhGiaoHang">
+        <MappingFragment StoreEntitySet="DM_LenhGiaoHang">
+          <ScalarProperty Name="SaleContractNo" ColumnName="SaleContractNo" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="SaleOrderCalNo" ColumnName="SaleOrderCalNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_LenhSanXuat">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_LenhSanXuat">
+        <MappingFragment StoreEntitySet="DM_LenhSanXuat">
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Location">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Location">
+        <MappingFragment StoreEntitySet="DM_Location">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_NhaVanChuyen">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_NhaVanChuyen">
+        <MappingFragment StoreEntitySet="DM_NhaVanChuyen">
+          <ScalarProperty Name="TenNhaVanChuyen" ColumnName="TenNhaVanChuyen" />
+          <ScalarProperty Name="MaNhaVanChuyen" ColumnName="MaNhaVanChuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Packing">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Packing">
+        <MappingFragment StoreEntitySet="DM_Packing">
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="PackageDesc" ColumnName="PackageDesc" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Pile">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Pile">
+        <MappingFragment StoreEntitySet="DM_Pile">
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_VatTu">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_VatTu">
+        <MappingFragment StoreEntitySet="DM_VatTu">
+          <ScalarProperty Name="TenSanPham" ColumnName="TenSanPham" />
+          <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Vitri">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Vitri">
+        <MappingFragment StoreEntitySet="DM_Vitri">
+          <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMG_PhieuCanCau">
+      <EntityTypeMapping TypeName="DBACOMModel.IMG_PhieuCanCau">
+        <MappingFragment StoreEntitySet="IMG_PhieuCanCau">
+          <ScalarProperty Name="IMG4" ColumnName="IMG4" />
+          <ScalarProperty Name="IMG3" ColumnName="IMG3" />
+          <ScalarProperty Name="IMG2" ColumnName="IMG2" />
+          <ScalarProperty Name="IMG1" ColumnName="IMG1" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItems">
+      <EntityTypeMapping TypeName="DBACOMModel.tblItems">
+        <MappingFragment StoreEntitySet="tblItems">
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Certificate">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Certificate">
+        <MappingFragment StoreEntitySet="DM_Certificate">
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_CropYear">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_CropYear">
+        <MappingFragment StoreEntitySet="DM_CropYear">
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_LoaiBao">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_LoaiBao">
+        <MappingFragment StoreEntitySet="DM_LoaiBao">
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblConfigScale">
+      <EntityTypeMapping TypeName="DBACOMModel.tblConfigScale">
+        <MappingFragment StoreEntitySet="tblConfigScales">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TypeEncode" ColumnName="TypeEncode" />
+          <ScalarProperty Name="StopBits" ColumnName="StopBits" />
+          <ScalarProperty Name="Parity" ColumnName="Parity" />
+          <ScalarProperty Name="DataBits" ColumnName="DataBits" />
+          <ScalarProperty Name="MaxSpeed" ColumnName="MaxSpeed" />
+          <ScalarProperty Name="PortServer" ColumnName="PortServer" />
+          <ScalarProperty Name="IPServer" ColumnName="IPServer" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_PurchaseContract">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_PurchaseContract">
+        <MappingFragment StoreEntitySet="DM_PurchaseContract">
+          <ScalarProperty Name="WeightNoteNo" ColumnName="WeightNoteNo" />
+          <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+          <ScalarProperty Name="ContractNetWeight" ColumnName="ContractNetWeight" />
+          <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+          <ScalarProperty Name="Cert" ColumnName="Cert" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorNo" ColumnName="VendorNo" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HT_NGUOIDUNG">
+      <EntityTypeMapping TypeName="DBACOMModel.HT_NGUOIDUNG">
+        <MappingFragment StoreEntitySet="HT_NGUOIDUNG">
+          <ScalarProperty Name="PathHinhAnh" ColumnName="PathHinhAnh" />
+          <ScalarProperty Name="QUYENPHANQUYEN" ColumnName="QUYENPHANQUYEN" />
+          <ScalarProperty Name="LINH_VUC" ColumnName="LINH_VUC" />
+          <ScalarProperty Name="DANH_MUC" ColumnName="DANH_MUC" />
+          <ScalarProperty Name="MENU_DOC" ColumnName="MENU_DOC" />
+          <ScalarProperty Name="MENU_NGANG" ColumnName="MENU_NGANG" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="KIEUGIAODIEN" ColumnName="KIEUGIAODIEN" />
+          <ScalarProperty Name="HOATDONG" ColumnName="HOATDONG" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="NGUOIDUNG" ColumnName="NGUOIDUNG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_CheckLicense" FunctionName="DBACOMModel.Store.SP_CheckLicense" />
+    <EntitySetMapping Name="tblBigBagConfig">
+      <EntityTypeMapping TypeName="DBACOMModel.tblBigBagConfig">
+        <MappingFragment StoreEntitySet="tblBigBagConfig">
+          <ScalarProperty Name="SoBaoDaSanXuat" ColumnName="SoBaoDaSanXuat" />
+          <ScalarProperty Name="HoanThanh" ColumnName="HoanThanh" />
+          <ScalarProperty Name="TamNgung" ColumnName="TamNgung" />
+          <ScalarProperty Name="UuTien" ColumnName="UuTien" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="IDScales" ColumnName="IDScales" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+          <ScalarProperty Name="Bag" ColumnName="Bag" />
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="LOT" ColumnName="LOT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLicenseKey">
+      <EntityTypeMapping TypeName="DBACOMModel.tblLicenseKey">
+        <MappingFragment StoreEntitySet="tblLicenseKeys">
+          <ScalarProperty Name="UserUse" ColumnName="UserUse" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="ActiveDate" ColumnName="ActiveDate" />
+          <ScalarProperty Name="ProductKey" ColumnName="ProductKey" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="RequestKey" ColumnName="RequestKey" />
+          <ScalarProperty Name="CPUInfo" ColumnName="CPUInfo" />
+          <ScalarProperty Name="Hardware" ColumnName="Hardware" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chitiet_LenhSanXuat">
+      <EntityTypeMapping TypeName="DBACOMModel.Chitiet_LenhSanXuat">
+        <MappingFragment StoreEntitySet="Chitiet_LenhSanXuat">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="QtyPicked" ColumnName="QtyPicked" />
+          <ScalarProperty Name="PDAUser" ColumnName="PDAUser" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PackingUnitCode" ColumnName="PackingUnitCode" />
+          <ScalarProperty Name="PalletQty" ColumnName="PalletQty" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_PhieuCanCau">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuCanCau">
+        <MappingFragment StoreEntitySet="DM_PhieuCanCau">
+          <ScalarProperty Name="UserName2" ColumnName="UserName2" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="ArrayQRCode" ColumnName="ArrayQRCode" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="PDAUser" ColumnName="PDAUser" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="ExportNav" ColumnName="ExportNav" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+          <ScalarProperty Name="TruckTare" ColumnName="TruckTare" />
+          <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+          <ScalarProperty Name="SecondWeight" ColumnName="SecondWeight" />
+          <ScalarProperty Name="FirstWeight" ColumnName="FirstWeight" />
+          <ScalarProperty Name="DateOut" ColumnName="DateOut" />
+          <ScalarProperty Name="DateIn" ColumnName="DateIn" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="TransporterCode" ColumnName="TransporterCode" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="WeightType" ColumnName="WeightType" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLichSuSanXuatBigbagJutBag">
+      <EntityTypeMapping TypeName="DBACOMModel.tblLichSuSanXuatBigbagJutBag">
+        <MappingFragment StoreEntitySet="tblLichSuSanXuatBigbagJutBag">
+          <ScalarProperty Name="SoLotTuCan" ColumnName="SoLotTuCan" />
+          <ScalarProperty Name="SanPhamTuCan" ColumnName="SanPhamTuCan" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="IDConfig" ColumnName="IDConfig" />
+          <ScalarProperty Name="IDScales" ColumnName="IDScales" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+          <ScalarProperty Name="LOT" ColumnName="LOT" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HIS_Phieucancau">
+      <EntityTypeMapping TypeName="DBACOMModel.HIS_Phieucancau">
+        <MappingFragment StoreEntitySet="HIS_Phieucancau">
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Dateupdate" ColumnName="Dateupdate" />
+          <ScalarProperty Name="ID_WeightNote" ColumnName="ID_WeightNote" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_PhieuNhap">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuNhap">
+        <MappingFragment StoreEntitySet="DM_PhieuNhap">
+          <ScalarProperty Name="KhaiBao_SoBao" ColumnName="KhaiBao_SoBao" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_PhieuXuat">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_PhieuXuat">
+        <MappingFragment StoreEntitySet="DM_PhieuXuat">
+          <ScalarProperty Name="KhaiBao_SoBao" ColumnName="KhaiBao_SoBao" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="ID_LenhSX" ColumnName="ID_LenhSX" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="VehicleNo" ColumnName="VehicleNo" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WH_ChiTietNhapKho">
+      <EntityTypeMapping TypeName="DBACOMModel.WH_ChiTietNhapKho">
+        <MappingFragment StoreEntitySet="WH_ChiTietNhapKho">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="Ca" ColumnName="Ca" />
+          <ScalarProperty Name="Thoigian" ColumnName="Thoigian" />
+          <ScalarProperty Name="IDPhieuNhap" ColumnName="IDPhieuNhap" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Sample" ColumnName="Sample" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+          <ScalarProperty Name="NetWeight" ColumnName="NetWeight" />
+          <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+          <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Document" ColumnName="Document" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WH_ChiTietXuatKho">
+      <EntityTypeMapping TypeName="DBACOMModel.WH_ChiTietXuatKho">
+        <MappingFragment StoreEntitySet="WH_ChiTietXuatKho">
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="LoaiXuat" ColumnName="LoaiXuat" />
+          <ScalarProperty Name="Ca" ColumnName="Ca" />
+          <ScalarProperty Name="Thoigian" ColumnName="Thoigian" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="IDLenhSanXuat" ColumnName="IDLenhSanXuat" />
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="IDPhieuXuat" ColumnName="IDPhieuXuat" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+          <ScalarProperty Name="TotalPackageQty" ColumnName="TotalPackageQty" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+          <ScalarProperty Name="GrossWeight" ColumnName="GrossWeight" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DocumentNo" ColumnName="DocumentNo" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_LoaiPhieuGiam">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_LoaiPhieuGiam">
+        <MappingFragment StoreEntitySet="DM_LoaiPhieuGiam">
+          <ScalarProperty Name="LoaiGiamKho" ColumnName="LoaiGiamKho" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log_PhieuCanCau">
+      <EntityTypeMapping TypeName="DBACOMModel.Log_PhieuCanCau">
+        <MappingFragment StoreEntitySet="Log_PhieuCanCau">
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="SoSauKhiSua" ColumnName="SoSauKhiSua" />
+          <ScalarProperty Name="SoCanBanDau" ColumnName="SoCanBanDau" />
+          <ScalarProperty Name="LanCan" ColumnName="LanCan" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="WeightNote" ColumnName="WeightNote" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WH_TonKho">
+      <EntityTypeMapping TypeName="DBACOMModel.WH_TonKho">
+        <MappingFragment StoreEntitySet="WH_TonKho">
+          <ScalarProperty Name="TruckQty" ColumnName="TruckQty" />
+          <ScalarProperty Name="Exported" ColumnName="Exported" />
+          <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="LotQty" ColumnName="LotQty" />
+          <ScalarProperty Name="Sample" ColumnName="Sample" />
+          <ScalarProperty Name="BinCode" ColumnName="BinCode" />
+          <ScalarProperty Name="QRCodeQty" ColumnName="QRCodeQty" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageCode" />
+          <ScalarProperty Name="PackageType" ColumnName="PackageType" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DM_Lot">
+      <EntityTypeMapping TypeName="DBACOMModel.DM_Lot">
+        <MappingFragment StoreEntitySet="DM_Lot">
+          <ScalarProperty Name="Cer" ColumnName="Cer" />
+          <ScalarProperty Name="PackingUnitCode" ColumnName="PackingUnitCode" />
+          <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="CropYear" ColumnName="CropYear" />
+          <ScalarProperty Name="Bag" ColumnName="Bag" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

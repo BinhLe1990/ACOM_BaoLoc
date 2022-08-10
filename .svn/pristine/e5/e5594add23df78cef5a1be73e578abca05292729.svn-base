@@ -1,0 +1,110 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+using DevExpress.XtraEditors;
+using DELFI_WHM.NET.DELFI_Class;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmCauHinhPackingUnits : DevExpress.XtraEditors.XtraForm
+    {
+        public frmCauHinhPackingUnits()
+        {
+            InitializeComponent();
+        }
+
+        private void Search()
+        {
+            this.Cursor = Cursors.WaitCursor;            
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                var data = db.DM_Packing.Where(c => c.Code.Contains(txtCode.Text) &&
+                                          c.DienGiai.Contains(txtDienGiai.Text)).ToList();
+                if (data != null)
+                {
+                    griDanhSach.DataSource = data;
+                }
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private bool Check_Cond()
+        {
+            if (txtCode.Text.Trim() == "")
+            {
+                XtraMessageBox.Show("Bạn chưa nhập Code", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCode.SelectAll();
+                return false;
+            }
+            if (Convert.ToDecimal(spnTrongLuong.uEditValue)==0)
+            {
+                XtraMessageBox.Show("Bạn chưa nhập Trọng lượng", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                spnTrongLuong.Focus();
+                return false;
+            }
+            return true;
+        }
+
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (!Check_Cond())
+                return;
+            this.Cursor = Cursors.WaitCursor;
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                DM_Packing lot = new DM_Packing();
+
+                db.DM_Packing.Add(new DM_Packing
+                {
+                    Code = txtCode.Text,
+                    DienGiai = txtDienGiai.Text,
+                    TrongLuong = Convert.ToDecimal(spnTrongLuong.uEditValue)                 
+
+                });
+                var query = (from s in db.DM_Packing
+                             where s.Code == txtCode.Text
+                             select s).FirstOrDefault<DM_Packing>();
+                if (query == null)
+                {
+                    db.SaveChanges();
+                }
+
+                {
+                    var data = db.DM_Packing.ToList();
+                    if (data != null)
+                    {
+                        griDanhSach.DataSource = data;
+                    }
+                }
+            }
+            this.Cursor = Cursors.Default;
+            XtraMessageBox.Show("Cập nhật danh sách thành công");
+        }
+
+        private void frmCauHinhPackingUnits_Load(object sender, EventArgs e)
+        {
+            Search(); 
+        }
+
+        private void gridView1_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+    }
+}

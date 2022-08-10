@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+using DevExpress.XtraEditors;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmSanPham : DevExpress.XtraEditors.XtraForm
+    {
+        public frmSanPham()
+        {
+            InitializeComponent();
+        }
+
+        private void Search()
+        {
+            this.Cursor = Cursors.WaitCursor;
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                var data = db.DM_VatTu.Where(c => c.MaSanPham.Contains(txtMaSanPham.Text) && c.TenSanPham.Contains(txtTenSanPham.Text)).ToList();
+                if (data != null)
+                {
+                    griDanhSach.DataSource = data;
+                }
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        private void frmSanPham_Load(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void btnDongBo_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            
+            string path = @"C:\Users\Dell\Downloads\NAV export files\ACOM_Items.txt";
+            string[] lines = File.ReadAllLines(path, Encoding.UTF8);
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                foreach (string line in lines)
+                {
+                    string[] MSP = line.Split(';');
+                    string _MaSanPham = MSP[0].Replace("\"", "");
+                    string _TenSanPham = MSP[1].Replace("\"", "");
+                    db.DM_VatTu.Add(new DM_VatTu
+                    {
+                        MaSanPham = _MaSanPham,
+                        TenSanPham = _TenSanPham
+                    });
+                    var query = (from s in db.DM_VatTu
+                                 where s.MaSanPham == _MaSanPham
+                                 select s).FirstOrDefault<DM_VatTu>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                }
+                Search();
+            }
+            this.Cursor = Cursors.Default;
+            XtraMessageBox.Show("Cập nhật danh sách thành công");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void gridView1_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBACOMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DBACOMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblConfigLinkSyncs" EntityType="DBACOMModel.tblConfigLinkSync" />
+    <EntitySet Name="HT_NGUOIDUNG" EntityType="DBACOMModel.HT_NGUOIDUNG" />
+  </EntityContainer>
+  <EntityType Name="tblConfigLinkSync">
+    <Key>
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HT_NGUOIDUNG">
+    <Key>
+      <PropertyRef Name="NGUOIDUNG" />
+      <PropertyRef Name="TAIKHOAN" />
+      <PropertyRef Name="MATKHAU" />
+      <PropertyRef Name="HOTEN" />
+      <PropertyRef Name="KIEUGIAODIEN" />
+      <PropertyRef Name="GHICHU" />
+      <PropertyRef Name="QUYENPHANQUYEN" />
+    </Key>
+    <Property Name="NGUOIDUNG" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TAIKHOAN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MATKHAU" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HOTEN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HOATDONG" Type="Boolean" />
+    <Property Name="KIEUGIAODIEN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GHICHU" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="QUYEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_NGANG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_DOC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DANH_MUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LINH_VUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QUYENPHANQUYEN" Type="Boolean" Nullable="false" />
+    <Property Name="PathHinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

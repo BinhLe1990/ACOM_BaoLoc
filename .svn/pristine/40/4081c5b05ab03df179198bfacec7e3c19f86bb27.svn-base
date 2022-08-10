@@ -1,0 +1,173 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+using DevExpress.XtraEditors;
+using DELFI_WHM.NET.DELFI_Class;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmCauHinhLot : DevExpress.XtraEditors.XtraForm
+    {
+        DELFI_Class.DELFIConnection cnn = new DELFI_WHM.NET.DELFI_Class.DELFIConnection(Program.sConnection);
+
+        public frmCauHinhLot()
+        {
+            InitializeComponent();
+        }
+
+        private void Search()
+        {
+            this.Cursor = Cursors.WaitCursor;
+            string MaSanPham = cnn.sNull2String(cboVatTu);
+            string CropYear = cnn.sNull2String(cboKhac);
+            using (DBACOMEntities db = new DBACOMEntities())
+            {               
+                var data = db.DM_Lot.Where(c => c.Lot.Contains(txtLot.Text) &&
+                                          c.MaSanPham.Contains(MaSanPham) &&
+                                          c.CropYear.Contains(CropYear) &&
+                                          c.GhiChu.Contains(txtGhiChu.Text)).OrderByDescending(c=>c.NgayTao).ToList();
+                if (data != null)
+                {
+                    griDanhSach.DataSource = data;
+                }
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private bool Check_Cond()
+        {
+            if (txtLot.Text.Trim() == "")
+            {
+                XtraMessageBox.Show("Bạn chưa nhập Số lot", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtLot.SelectAll();
+                return false;
+            }
+            if (cboVatTu.uEditValue==null)
+            {
+                XtraMessageBox.Show("Bạn chưa chọn Sản phẩm", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboVatTu.Focus();
+                return false;
+            }
+            if (cboKhac.uEditValue == null)
+            {
+                XtraMessageBox.Show("Bạn chưa chọn Crop Year", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboKhac.Focus();
+                return false;
+            }
+            return true;
+        }
+
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if(!Check_Cond())
+                return;
+            this.Cursor = Cursors.WaitCursor;
+                using (DBACOMEntities db = new DBACOMEntities())
+                {
+                    DM_Lot lot = new DM_Lot();
+
+                db.DM_Lot.Add(new DM_Lot
+                {
+                    Lot = txtLot.Text,
+                    CropYear = cboKhac.uEditValue.ToString(),
+                    MaSanPham = cboVatTu.uEditValue.ToString(),
+                    NgayTao = Convert.ToDateTime(dtpNgayTao.uValue),
+                    GhiChu = txtGhiChu.Text
+
+                    });
+                    var query = (from s in db.DM_Lot
+                                 where s.Lot == txtLot.Text
+                                 select s).FirstOrDefault<DM_Lot>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                
+                {
+                    var data = db.DM_Lot.OrderByDescending(c => c.NgayTao).ToList();
+                    if (data != null)
+                    {
+                        griDanhSach.DataSource = data;
+                    }
+                }
+            }
+                this.Cursor = Cursors.Default;
+                XtraMessageBox.Show("Cập nhật danh sách thành công");
+           
+        }
+
+        private void btnInDanhSach_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+        private void frmCauHinhLot_Load(object sender, EventArgs e)
+        {
+            Search();
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                {
+                    var data = db.DM_VatTu.ToList();
+                    if (data != null)
+                    {
+                        DataTable dt = new DataTable();
+                        dt.Columns.Add("MaSanPham");
+                        dt.Columns.Add("TenSanPham");
+                        dt = ConvertToDataTable(data);
+                        cboVatTu.uDataSource = dt;
+
+                    }
+                }
+                {
+                    var data = db.DM_Khac.Where(c=>c.Code=="CropYear").ToList();
+                    if (data != null)
+                    {
+                        DataTable dt = new DataTable();
+                        dt.Columns.Add("Ten");
+                        dt = ConvertToDataTable(data);
+                        cboKhac.uDataSource = dt;
+                    }
+                }
+            }
+        }
+
+        public DataTable ConvertToDataTable<T>(IList<T> data)
+        {
+            PropertyDescriptorCollection properties =
+               TypeDescriptor.GetProperties(typeof(T));
+            DataTable table = new DataTable();
+            foreach (PropertyDescriptor prop in properties)
+                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+            foreach (T item in data)
+            {
+                DataRow row = table.NewRow();
+                foreach (PropertyDescriptor prop in properties)
+                    row[prop.Name] = prop.GetValue(item) ?? DBNull.Value;
+                table.Rows.Add(row);
+            }
+            return table;
+
+        }
+
+        private void gridView1_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+    }
+}

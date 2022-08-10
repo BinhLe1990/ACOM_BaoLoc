@@ -1,0 +1,444 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v15.1\v4.0_15.1.5.0__b88d1754d700e49a\DevExpress.XtraReports.v15.1.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>15.1</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.xtraReport1">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xtraReport1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.ReportHeaderBand reportHeaderBand1;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
+        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
+        private DevExpress.XtraReports.UI.XRPivotGrid pivotGrid1;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField1;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField2;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField3;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField4;
+        private DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField pivotGridField5;
+        private DevExpress.XtraReports.UI.FormattingRule formattingRule1;
+        private DevExpress.XtraReports.UI.XRControlStyle xrControlStyle1;
+        private DevExpress.XtraReports.UI.XRControlStyle xrControlStyle2;
+        private DevExpress.XtraReports.UI.XRControlStyle DataField;
+        private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
+        private DevExpress.XtraReports.UI.XRControlStyle FieldCaption;
+        private DevExpress.XtraReports.UI.XRControlStyle Title;
+        private DevExpress.XtraReports.UI.XRControlStyle controlStyle3;
+        private DevExpress.XtraReports.UI.CalculatedField calThamDu;
+        private DevExpress.XtraReports.Parameters.Parameter par_COQUANCHUQUAN;
+        private DevExpress.XtraReports.Parameters.Parameter par_TENCOQUAN;
+        private DevExpress.XtraReports.Parameters.Parameter par_DIENTHOAI;
+        private DevExpress.XtraReports.Parameters.Parameter par_DIACHI;
+        private DevExpress.XtraReports.Parameters.Parameter par_HIEUTRUONG;
+        private DevExpress.XtraReports.Parameters.Parameter par_TPDAOTAO;
+        private DevExpress.XtraReports.Parameters.Parameter par_TPTAIVU;
+        private DevExpress.XtraReports.Parameters.Parameter par_TPQLSV;
+        private DevExpress.XtraReports.Parameters.Parameter par_DIADIEM;
+        private DevExpress.XtraReports.Parameters.Parameter par_NOW;
+        private DevExpress.XtraReports.Parameters.Parameter pMH1;
+        private DevExpress.XtraReports.Parameters.Parameter par_THANG;
+        private DevExpress.XtraReports.Parameters.Parameter par_PHANHE;
+        private DevExpress.XtraReports.Parameters.Parameter par_COSO;
+        private DevExpress.XtraReports.Parameters.Parameter par_NAM;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public xtraReport1() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.xtraReport1");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.reportHeaderBand1 = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pivotGrid1 = new DevExpress.XtraReports.UI.XRPivotGrid();
+            this.pivotGridField1 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField2 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField3 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField4 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.pivotGridField5 = new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField();
+            this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.xrControlStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.xrControlStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.DataField = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.FieldCaption = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.controlStyle3 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.calThamDu = new DevExpress.XtraReports.UI.CalculatedField();
+            this.par_COQUANCHUQUAN = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_TENCOQUAN = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_DIENTHOAI = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_DIACHI = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_HIEUTRUONG = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_TPDAOTAO = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_TPTAIVU = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_TPQLSV = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_DIADIEM = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_NOW = new DevExpress.XtraReports.Parameters.Parameter();
+            this.pMH1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_THANG = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_PHANHE = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_COSO = new DevExpress.XtraReports.Parameters.Parameter();
+            this.par_NAM = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Detail
+            // 
+            this.Detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Detail.HeightF = 0F;
+            this.Detail.MultiColumn.Mode = DevExpress.XtraReports.UI.MultiColumnMode.UseColumnCount;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.Detail.StylePriority.UseForeColor = false;
+            this.Detail.StylePriority.UseTextAlignment = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // reportHeaderBand1
+            // 
+            this.reportHeaderBand1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.reportHeaderBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label1,
+                        this.xrLabel1});
+            this.reportHeaderBand1.HeightF = 92.79166F;
+            this.reportHeaderBand1.Name = "reportHeaderBand1";
+            this.reportHeaderBand1.StylePriority.UseBorders = false;
+            // 
+            // topMarginBand1
+            // 
+            this.topMarginBand1.HeightF = 44F;
+            this.topMarginBand1.Name = "topMarginBand1";
+            // 
+            // bottomMarginBand1
+            // 
+            this.bottomMarginBand1.HeightF = 50F;
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            // 
+            // GroupFooter1
+            // 
+            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.pivotGrid1});
+            this.GroupFooter1.HeightF = 50F;
+            this.GroupFooter1.Name = "GroupFooter1";
+            // 
+            // label1
+            // 
+            this.label1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Tieude")});
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 45.91665F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label1.SizeF = new System.Drawing.SizeF(1109F, 23F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UseTextAlignment = false;
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 12.91666F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(1109F, 32.99998F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "BÁO CÁO TỒN KHO THEO CÂY HÀNG";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // pivotGrid1
+            // 
+            this.pivotGrid1.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGrid1.Appearance.FieldValueGrandTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGrid1.Appearance.FieldValueTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGrid1.Fields.AddRange(new DevExpress.XtraReports.UI.PivotGrid.XRPivotGridField[] {
+                        this.pivotGridField1,
+                        this.pivotGridField2,
+                        this.pivotGridField3,
+                        this.pivotGridField4,
+                        this.pivotGridField5});
+            this.pivotGrid1.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 0F);
+            this.pivotGrid1.Name = "pivotGrid1";
+            this.pivotGrid1.OptionsPrint.FilterSeparatorBarPadding = 3;
+            this.pivotGrid1.OptionsPrint.MergeRowFieldValues = false;
+            this.pivotGrid1.OptionsPrint.PrintHeadersOnEveryPage = true;
+            this.pivotGrid1.OptionsPrint.PrintUnusedFilterFields = false;
+            this.pivotGrid1.OptionsView.ShowColumnGrandTotalHeader = false;
+            this.pivotGrid1.OptionsView.ShowColumnGrandTotals = false;
+            this.pivotGrid1.OptionsView.ShowColumnHeaders = false;
+            this.pivotGrid1.OptionsView.ShowColumnTotals = false;
+            this.pivotGrid1.OptionsView.ShowDataHeaders = false;
+            this.pivotGrid1.OptionsView.ShowFilterHeaders = false;
+            this.pivotGrid1.OptionsView.ShowRowGrandTotalHeader = false;
+            this.pivotGrid1.OptionsView.ShowRowGrandTotals = false;
+            this.pivotGrid1.OptionsView.ShowRowTotals = false;
+            this.pivotGrid1.SizeF = new System.Drawing.SizeF(577.5F, 50F);
+            // 
+            // pivotGridField1
+            // 
+            this.pivotGridField1.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGridField1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.pivotGridField1.AreaIndex = 0;
+            this.pivotGridField1.Caption = "Cây hàng";
+            this.pivotGridField1.FieldName = "BinCode";
+            this.pivotGridField1.Name = "pivotGridField1";
+            // 
+            // pivotGridField2
+            // 
+            this.pivotGridField2.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGridField2.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.pivotGridField2.AreaIndex = 1;
+            this.pivotGridField2.Caption = "Sản phẩm";
+            this.pivotGridField2.FieldName = "ItemNo";
+            this.pivotGridField2.Name = "pivotGridField2";
+            this.pivotGridField2.Width = 120;
+            // 
+            // pivotGridField3
+            // 
+            this.pivotGridField3.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGridField3.Appearance.FieldValue.TextHorizontalAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.pivotGridField3.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.pivotGridField3.AreaIndex = 2;
+            this.pivotGridField3.Caption = "NetWeight";
+            this.pivotGridField3.CellFormat.FormatString = "N0";
+            this.pivotGridField3.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.pivotGridField3.FieldName = "NetWeight";
+            this.pivotGridField3.Name = "pivotGridField3";
+            this.pivotGridField3.ValueFormat.FormatString = "N0";
+            this.pivotGridField3.ValueFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            // 
+            // pivotGridField4
+            // 
+            this.pivotGridField4.Appearance.FieldHeader.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.pivotGridField4.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.pivotGridField4.AreaIndex = 0;
+            this.pivotGridField4.FieldName = "PackageCode";
+            this.pivotGridField4.Name = "pivotGridField4";
+            this.pivotGridField4.Width = 70;
+            // 
+            // pivotGridField5
+            // 
+            this.pivotGridField5.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.pivotGridField5.AreaIndex = 0;
+            this.pivotGridField5.CellFormat.FormatString = "N0";
+            this.pivotGridField5.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.pivotGridField5.FieldName = "Qty";
+            this.pivotGridField5.Name = "pivotGridField5";
+            this.pivotGridField5.ValueFormat.FormatString = "N0";
+            this.pivotGridField5.ValueFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.pivotGridField5.Width = 70;
+            // 
+            // formattingRule1
+            // 
+            this.formattingRule1.Condition = "[Del]=1";
+            // 
+            // 
+            // 
+            this.formattingRule1.Formatting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.formattingRule1.Formatting.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.formattingRule1.Name = "formattingRule1";
+            // 
+            // xrControlStyle1
+            // 
+            this.xrControlStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xrControlStyle1.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.xrControlStyle1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrControlStyle1.BorderWidth = 1F;
+            this.xrControlStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.xrControlStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.xrControlStyle1.Name = "xrControlStyle1";
+            // 
+            // xrControlStyle2
+            // 
+            this.xrControlStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.xrControlStyle2.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.xrControlStyle2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrControlStyle2.BorderWidth = 1F;
+            this.xrControlStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.xrControlStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.xrControlStyle2.Name = "xrControlStyle2";
+            // 
+            // DataField
+            // 
+            this.DataField.BackColor = System.Drawing.Color.White;
+            this.DataField.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.DataField.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.DataField.BorderWidth = 1F;
+            this.DataField.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.DataField.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DataField.Name = "DataField";
+            // 
+            // PageInfo
+            // 
+            this.PageInfo.BackColor = System.Drawing.Color.White;
+            this.PageInfo.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.PageInfo.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.PageInfo.BorderWidth = 1F;
+            this.PageInfo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.PageInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.PageInfo.Name = "PageInfo";
+            // 
+            // FieldCaption
+            // 
+            this.FieldCaption.BackColor = System.Drawing.Color.White;
+            this.FieldCaption.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.FieldCaption.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.FieldCaption.BorderWidth = 1F;
+            this.FieldCaption.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.FieldCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.FieldCaption.Name = "FieldCaption";
+            // 
+            // Title
+            // 
+            this.Title.BackColor = System.Drawing.Color.White;
+            this.Title.BorderColor = System.Drawing.SystemColors.ControlText;
+            this.Title.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.Title.BorderWidth = 1F;
+            this.Title.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.Title.ForeColor = System.Drawing.Color.Maroon;
+            this.Title.Name = "Title";
+            // 
+            // controlStyle3
+            // 
+            this.controlStyle3.BackColor = System.Drawing.Color.Gainsboro;
+            this.controlStyle3.Name = "controlStyle3";
+            this.controlStyle3.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            // 
+            // calThamDu
+            // 
+            this.calThamDu.Expression = "Iif([Checked] = 1,\'Danh sách khách tham gia\', \'Danh sách không tham gia\' )";
+            this.calThamDu.FieldType = DevExpress.XtraReports.UI.FieldType.String;
+            this.calThamDu.Name = "calThamDu";
+            // 
+            // par_COQUANCHUQUAN
+            // 
+            this.par_COQUANCHUQUAN.Name = "par_COQUANCHUQUAN";
+            // 
+            // par_TENCOQUAN
+            // 
+            this.par_TENCOQUAN.Name = "par_TENCOQUAN";
+            // 
+            // par_DIENTHOAI
+            // 
+            this.par_DIENTHOAI.Name = "par_DIENTHOAI";
+            // 
+            // par_DIACHI
+            // 
+            this.par_DIACHI.Name = "par_DIACHI";
+            // 
+            // par_HIEUTRUONG
+            // 
+            this.par_HIEUTRUONG.Name = "par_HIEUTRUONG";
+            // 
+            // par_TPDAOTAO
+            // 
+            this.par_TPDAOTAO.Name = "par_TPDAOTAO";
+            // 
+            // par_TPTAIVU
+            // 
+            this.par_TPTAIVU.Name = "par_TPTAIVU";
+            // 
+            // par_TPQLSV
+            // 
+            this.par_TPQLSV.Name = "par_TPQLSV";
+            // 
+            // par_DIADIEM
+            // 
+            this.par_DIADIEM.Name = "par_DIADIEM";
+            // 
+            // par_NOW
+            // 
+            this.par_NOW.Name = "par_NOW";
+            // 
+            // pMH1
+            // 
+            this.pMH1.Name = "pMH1";
+            // 
+            // par_THANG
+            // 
+            this.par_THANG.Name = "par_THANG";
+            // 
+            // par_PHANHE
+            // 
+            this.par_PHANHE.Name = "par_PHANHE";
+            // 
+            // par_COSO
+            // 
+            this.par_COSO.Name = "par_COSO";
+            // 
+            // par_NAM
+            // 
+            this.par_NAM.Name = "par_NAM";
+            // 
+            // xtraReport1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail,
+                        this.reportHeaderBand1,
+                        this.topMarginBand1,
+                        this.bottomMarginBand1,
+                        this.GroupFooter1});
+            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
+                        this.calThamDu});
+            this.DesignerOptions.ShowDesignerHints = false;
+            this.DesignerOptions.ShowExportWarnings = false;
+            this.DisplayName = "BÁO CÁO TỒN KHO";
+            this.FormattingRuleSheet.AddRange(new DevExpress.XtraReports.UI.FormattingRule[] {
+                        this.formattingRule1});
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(20, 20, 44, 50);
+            this.Name = "xtraReport1";
+            this.PageHeight = 827;
+            this.PageWidth = 1169;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.par_COQUANCHUQUAN,
+                        this.par_TENCOQUAN,
+                        this.par_DIENTHOAI,
+                        this.par_DIACHI,
+                        this.par_HIEUTRUONG,
+                        this.par_TPDAOTAO,
+                        this.par_TPTAIVU,
+                        this.par_TPQLSV,
+                        this.par_DIADIEM,
+                        this.par_NOW,
+                        this.pMH1,
+                        this.par_THANG,
+                        this.par_PHANHE,
+                        this.par_COSO});
+            this.SnapGridSize = 4.166667F;
+            this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
+                        this.xrControlStyle1,
+                        this.xrControlStyle2,
+                        this.DataField,
+                        this.PageInfo,
+                        this.FieldCaption,
+                        this.Title,
+                        this.controlStyle3});
+            this.Version = "15.1";
+            this.Watermark.ForeColor = System.Drawing.Color.LightGray;
+            this.Watermark.TextTransparency = 136;
+            this.XmlDataPath = "D:\\_EMIS Tin chi\\XML\\DanhSachSinhVien.XML";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

@@ -1,0 +1,1091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A98FE55-7FFD-49B3-83E2-592604FA9D1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DELFI_WHM.NET</RootNamespace>
+    <AssemblyName>READER.NET</AssemblyName>
+    <ApplicationIcon>delfi.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <StartupObject>
+    </StartupObject>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <LangVersion>default</LangVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Tutorials.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v15.1.Service, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1.Service, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Design, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Reporting, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Reporting.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=6.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoTK\frmViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTK\frmViewReport.Designer.cs">
+      <DependentUpon>frmViewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CanCau\frmCanCau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanCau\frmCanCau.Designer.cs">
+      <DependentUpon>frmCanCau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhCanTuDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhCanTuDong.Designer.cs">
+      <DependentUpon>frmCauHinhCanTuDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhLot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhLot.Designer.cs">
+      <DependentUpon>frmCauHinhLot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhPackingUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhPackingUnits.Designer.cs">
+      <DependentUpon>frmCauHinhPackingUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhSyncDuLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmCauHinhSyncDuLieu.Designer.cs">
+      <DependentUpon>frmCauHinhSyncDuLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmCropYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmCropYear.Designer.cs">
+      <DependentUpon>frmCropYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmLocations.Designer.cs">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmNhaVanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmNhaVanChuyen.Designer.cs">
+      <DependentUpon>frmNhaVanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CauHinh\frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CauHinh\frmSanPham.Designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI Class\DELFIConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DELFI Class\DELFIConnectionMySql.cs" />
+    <Compile Include="DELFI Class\DELFIDateProcess.cs" />
+    <Compile Include="DELFI Class\DELFIEncryptAndDecrypt.cs" />
+    <Compile Include="DELFI Class\DELFIException.cs" />
+    <Compile Include="DELFI Class\DELFIFileCompress.cs" />
+    <Compile Include="DELFI Class\DELFIFileProcess.cs" />
+    <Compile Include="DELFI Class\DELFIRegistry.cs" />
+    <Compile Include="DELFI Class\DELFITextProcess.cs" />
+    <Compile Include="DELFI User Control\frmDefineCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\frmDefineCondition.designer.cs">
+      <DependentUpon>frmDefineCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\frmuFindConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\frmuFindConfig.designer.cs">
+      <DependentUpon>frmuFindConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uDataGrid.Designer.cs">
+      <DependentUpon>uDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uDateTimePicker.Designer.cs">
+      <DependentUpon>uDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uFind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uFind.designer.cs">
+      <DependentUpon>uFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uLabel.Designer.cs">
+      <DependentUpon>uLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uLop.Designer.cs">
+      <DependentUpon>uLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uMemoEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uMemoEdit.Designer.cs">
+      <DependentUpon>uMemoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uMemoExEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uMemoExEdit.Designer.cs">
+      <DependentUpon>uMemoExEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uNumPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uNumPad.Designer.cs">
+      <DependentUpon>uNumPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uSearch.Designer.cs">
+      <DependentUpon>uSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uSpinEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uSpinEdit.Designer.cs">
+      <DependentUpon>uSpinEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uTextBox.Designer.cs">
+      <DependentUpon>uTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\uComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\uComboBox.Designer.cs">
+      <DependentUpon>uComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsRun.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcess.Designer.cs">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThayDoiHinhNem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThayDoiHinhNem.Designer.cs">
+      <DependentUpon>frmThayDoiHinhNem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongTinCoQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinCoQuan.Designer.cs">
+      <DependentUpon>frmThongTinCoQuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebBrowser.Designer.cs">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrHT\frmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrHT\frmRestore.Designer.cs">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrHT\frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrHT\frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmHeThong.Designer.cs">
+      <DependentUpon>frmHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmImportData.Designer.cs">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\frmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\frmExport.Designer.cs">
+      <DependentUpon>frmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI Class\frmSQLProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI Class\frmSQLProcess.Designer.cs">
+      <DependentUpon>frmSQLProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIComboBox.Designer.cs">
+      <DependentUpon>DELFIComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIComboBoxMutilCol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIComboBoxMutilCol.Designer.cs">
+      <DependentUpon>DELFIComboBoxMutilCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisBacDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisBacDaoTao.Designer.cs">
+      <DependentUpon>DELFIEmisBacDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisNamHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisNamHoc.Designer.cs">
+      <DependentUpon>DELFIEmisNamHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisNganhDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisNganhDaoTao.Designer.cs">
+      <DependentUpon>DELFIEmisNganhDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIDateTimePicker.Designer.cs">
+      <DependentUpon>DELFIDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisLoaiDaoTao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisLoaiDaoTao.Designer.cs">
+      <DependentUpon>DELFIEmisLoaiDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisKhoaHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisKhoaHoc.Designer.cs">
+      <DependentUpon>DELFIEmisKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisLopHoc.Designer.cs">
+      <DependentUpon>DELFIEmisLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisThanhPho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisThanhPho.Designer.cs">
+      <DependentUpon>DELFIEmisThanhPho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisQuanHuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisQuanHuyen.Designer.cs">
+      <DependentUpon>DELFIEmisQuanHuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisDanToc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisDanToc.Designer.cs">
+      <DependentUpon>DELFIEmisDanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisTonGiao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\DELFIEmisTonGiao.Designer.cs">
+      <DependentUpon>DELFIEmisTonGiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DanhMucHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DanhMucHeThong.Designer.cs">
+      <DependentUpon>frmDM_DanhMucHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DM_DataGridConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DM_DataGridConfig.Designer.cs">
+      <DependentUpon>frmDM_DM_DataGridConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DM_PopupGridAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_DM_PopupGridAdd.Designer.cs">
+      <DependentUpon>frmDM_DM_PopupGridAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmThongTinNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmThongTinNguoiDung.Designer.cs">
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDanhSachNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDanhSachNguoiDung.Designer.cs">
+      <DependentUpon>frmDanhSachNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmKhoaNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmKhoaNguoiDung.Designer.cs">
+      <DependentUpon>frmKhoaNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmNhatKyNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmNhatKyNguoiDung.Designer.cs">
+      <DependentUpon>frmNhatKyNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmPopupQuyenTuongTuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmPopupQuyenTuongTuong.Designer.cs">
+      <DependentUpon>frmPopupQuyenTuongTuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmTaoNhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmTaoNhomNguoiDung.Designer.cs">
+      <DependentUpon>frmTaoNhomNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmNDDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmNDDoiMatKhau.Designer.cs">
+      <DependentUpon>frmNDDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmPhanQuyenSuDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmPhanQuyenSuDung.Designer.cs">
+      <DependentUpon>frmPhanQuyenSuDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmTaoNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\FrND\frmTaoNguoiDung.Designer.cs">
+      <DependentUpon>frmTaoNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTK\frmMainViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTK\frmMainViewReport.Designer.cs">
+      <DependentUpon>frmMainViewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTK\frmReportDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTK\frmReportDesign.Designer.cs">
+      <DependentUpon>frmReportDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\frmPopupGridAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\frmPopupGridAdd.Designer.cs">
+      <DependentUpon>frmPopupGridAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcomData.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcomData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcomData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcomData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcomData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcomData.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HT_NGUOIDUNG.cs">
+      <DependentUpon>AcomData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblConfigLinkSync.cs">
+      <DependentUpon>AcomData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhapKho\frmNhapKhoThanhPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapKho\frmNhapKhoThanhPham.Designer.cs">
+      <DependentUpon>frmNhapKhoThanhPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapKho\frmNhapKhoTuBoPhanSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapKho\frmNhapKhoTuBoPhanSanXuat.Designer.cs">
+      <DependentUpon>frmNhapKhoTuBoPhanSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\fmPhieuCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\fmPhieuCan.Designer.cs">
+      <DependentUpon>fmPhieuCan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frmHopDongMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frmHopDongMuaHang.Designer.cs">
+      <DependentUpon>frmHopDongMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frmLenhSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frmLenhSanXuat.Designer.cs">
+      <DependentUpon>frmLenhSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy\frmYeuCauGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy\frmYeuCauGiaoHang.Designer.cs">
+      <DependentUpon>frmYeuCauGiaoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ThamSoSQL\frmPopupNhapThamSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThamSoSQL\frmPopupNhapThamSo.designer.cs">
+      <DependentUpon>frmPopupNhapThamSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThamSoSQL\frmSQLAnalyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThamSoSQL\frmSQLAnalyzer.Designer.cs">
+      <DependentUpon>frmSQLAnalyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DELFI User Control\frmDataGridConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELFI User Control\frmDataGridConfig.Designer.cs">
+      <DependentUpon>frmDataGridConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThamSoSQL\frmThamSoSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThamSoSQL\frmThamSoSQL.Designer.cs">
+      <DependentUpon>frmThamSoSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XuatKho\frmTachPhieuXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatKho\frmTachPhieuXuatKho.Designer.cs">
+      <DependentUpon>frmTachPhieuXuatKho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoTK\frmViewReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmViewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CanCau\frmCanCau.resx">
+      <DependentUpon>frmCanCau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmCauHinhCanTuDong.resx">
+      <DependentUpon>frmCauHinhCanTuDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmCauHinhLot.resx">
+      <DependentUpon>frmCauHinhLot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmCauHinhPackingUnits.resx">
+      <DependentUpon>frmCauHinhPackingUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmCauHinhSyncDuLieu.resx">
+      <DependentUpon>frmCauHinhSyncDuLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmCropYear.resx">
+      <DependentUpon>frmCropYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmLocations.resx">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmNhaVanChuyen.resx">
+      <DependentUpon>frmNhaVanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CauHinh\frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\frmDefineCondition.resx">
+      <DependentUpon>frmDefineCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\frmuFindConfig.resx">
+      <DependentUpon>frmuFindConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uDataGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uDateTimePicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uFind.resx">
+      <DependentUpon>uFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uLop.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uMemoEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uMemoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uMemoExEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uMemoExEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uNumPad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uNumPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uSpinEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uSpinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\uComboBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>uComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcess.resx">
+      <DependentUpon>frmProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThayDoiHinhNem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThayDoiHinhNem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinCoQuan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThongTinCoQuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebBrowser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrHT\frmRestore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrHT\frmBackup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmHeThong.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmImportData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\frmExport.resx">
+      <DependentUpon>frmExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI Class\frmSQLProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSQLProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIComboBox.resx">
+      <DependentUpon>DELFIComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIComboBoxMutilCol.resx">
+      <DependentUpon>DELFIComboBoxMutilCol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisBacDaoTao.resx">
+      <DependentUpon>DELFIEmisBacDaoTao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisNamHoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DELFIEmisNamHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisNganhDaoTao.resx">
+      <DependentUpon>DELFIEmisNganhDaoTao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIDateTimePicker.resx">
+      <DependentUpon>DELFIDateTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisLoaiDaoTao.resx">
+      <DependentUpon>DELFIEmisLoaiDaoTao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisKhoaHoc.resx">
+      <DependentUpon>DELFIEmisKhoaHoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisLopHoc.resx">
+      <DependentUpon>DELFIEmisLopHoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisThanhPho.resx">
+      <DependentUpon>DELFIEmisThanhPho.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisQuanHuyen.resx">
+      <DependentUpon>DELFIEmisQuanHuyen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisDanToc.resx">
+      <DependentUpon>DELFIEmisDanToc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\DELFIEmisTonGiao.resx">
+      <DependentUpon>DELFIEmisTonGiao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDM_DanhMucHeThong.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDM_DanhMucHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDM_DM_DataGridConfig.resx">
+      <DependentUpon>frmDM_DM_DataGridConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDM_DM_PopupGridAdd.resx">
+      <DependentUpon>frmDM_DM_PopupGridAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmThongTinNguoiDung.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmDanhSachNguoiDung.resx">
+      <DependentUpon>frmDanhSachNguoiDung.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmKhoaNguoiDung.resx">
+      <DependentUpon>frmKhoaNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmNhatKyNguoiDung.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNhatKyNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmTaoNhomNguoiDung.resx">
+      <DependentUpon>frmTaoNhomNguoiDung.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmDangNhap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmDoiMatKhau.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmNDDoiMatKhau.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNDDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmPhanQuyenSuDung.resx">
+      <DependentUpon>frmPhanQuyenSuDung.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\FrND\frmTaoNguoiDung.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTaoNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTK\frmMainViewReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMainViewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTK\frmReportDesign.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReportDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\frmPopupGridAdd.resx">
+      <DependentUpon>frmPopupGridAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapKho\frmNhapKhoThanhPham.resx">
+      <DependentUpon>frmNhapKhoThanhPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapKho\frmNhapKhoTuBoPhanSanXuat.resx">
+      <DependentUpon>frmNhapKhoTuBoPhanSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QuanLy\fmPhieuCan.resx">
+      <DependentUpon>fmPhieuCan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frmHopDongMuaHang.resx">
+      <DependentUpon>frmHopDongMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frmLenhSanXuat.resx">
+      <DependentUpon>frmLenhSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy\frmYeuCauGiaoHang.resx">
+      <DependentUpon>frmYeuCauGiaoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThamSoSQL\frmPopupNhapThamSo.resx">
+      <DependentUpon>frmPopupNhapThamSo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThamSoSQL\frmSQLAnalyzer.resx">
+      <DependentUpon>frmSQLAnalyzer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELFI User Control\frmDataGridConfig.resx">
+      <DependentUpon>frmDataGridConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThamSoSQL\frmThamSoSQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThamSoSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiem\frmTimKiemNhanSu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTimKiemNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XuatKho\frmTachPhieuXuatKho.resx">
+      <DependentUpon>frmTachPhieuXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EntityDeploy Include="Models\AcomData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AcomData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\AcomData.edmx.diagram">
+      <DependentUpon>AcomData.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TimKiem\frmTimKiemNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiem\frmTimKiemNhanSu.Designer.cs">
+      <DependentUpon>frmTimKiemNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="delfi.ico" />
+    <Content Include="Logo.ico" />
+    <Content Include="Models\AcomData.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AcomData.Context.cs</LastGenOutput>
+      <DependentUpon>AcomData.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\AcomData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AcomData.edmx</DependentUpon>
+      <LastGenOutput>AcomData.cs</LastGenOutput>
+    </Content>
+    <Content Include="nxviewSZ.ico" />
+    <Content Include="Profile.ico" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\2-Phieucanxe-CacPhieuDangCan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaoCao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

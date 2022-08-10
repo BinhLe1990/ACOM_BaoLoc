@@ -1,0 +1,409 @@
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\bin\Release\Interop.SHDocVw.dll
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\ResolveAssemblyReference.cache
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\Interop.SHDocVw.dll
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.csproj.ResolveComReference.cache
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.csproj.GenerateResource.Cache
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.exe.config
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.PrintRibbonControllerResources.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Properties.Resources.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.XRDesignRibbonControllerResources.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.exe.licenses
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.exe
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.pdb
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BaoCaoTK.frmViewReport.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmDefineCondition.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmUFINDConfig.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uDataGrid.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uDateTimePicker.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uFind.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uLabel.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uLop.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uMemoEdit.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uMemoExEdit.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uNhanSu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uNumPad.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uSearch.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uSpinEdit.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uTextBox.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uComboBox.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmAbout.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmProcess.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmThayDoiHinhNem.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmThongTinCoQuan.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmWebBrowser.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangThamNienGD.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapABC.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapGioPhuTroi.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam_ThinhGiang.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmNhanSu_BaoHiem.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaATM.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeThayDoiLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDayThemMoi.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay_ChiTiet.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTruyThu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmViewHoaDon.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmInTemLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanQuy.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaNganHang.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeHoaDonXuat.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuNhapKhac.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopLuongTheoPhongBan.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopThuNhap.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuongTheoChucDanh.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangPhuCap.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmKhauTruTrongThang.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmSoLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeNghiPhep.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongThang.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongNgay.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuong_Thuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetGiamTruGiaCanh.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXuatHoaDonDo.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhTangThamNienGD.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeThiDua.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmBC_TKToChucCanBo.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmChuyenPhong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhMaNhanSu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhSachDenHanNghiHuu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuanHeGiaDinh.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeNhanVienTheoDoTuoi.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTongHopQuaTrinh.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmVanBangChungChi.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTaiNanLaoDong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChuyenCongTac.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhDaoTao.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKyLuat.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKhenThuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHopDongLaoDong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuChuaTangLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuSapHetHanHD.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhCongTac.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhLuong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChucVu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHoSoNhanSu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmRestore.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmBackup.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.frmHeThong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.frmImportData.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCComboBox.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCComboBoxMutilCol.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisBacDaoTao.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisNamHoc.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisNganhDaoTao.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCDateTimePicker.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisLoaiDaoTao.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisKhoaHoc.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisLopHoc.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisThanhPho.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisQuanHuyen.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisDanToc.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisTonGiao.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DanhMucHeThong.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_DataGridConfig.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_PopupGridAdd.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.frmThongTinNguoiDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDanhSachNguoiDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrND.frmNhatKyNguoiDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNhomNguoiDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDangNhap.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDoiMatKhau.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmNDDoiMatKhau.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmPhanQuyenSuDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNguoiDung.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmMain.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrReport.frmMainViewReport.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrReport.frmReportDesign.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeTheoLoaiHD.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTimKiemNhanSu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmPopupGridAdd.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmXetThiDua.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.ThamSoSQL.frmPopupNhapThamSo.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmSQLAnalyzer.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmDataGridConfig.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmThamSoSQL.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.TimKiem.frmTimKiemNhanSu.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.exe
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.pdb
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmExport.resources
+F:\HRM\CDMT DongNai\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmSQLProcess.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.exe.config
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\Interop.SHDocVw.dll
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.csproj.ResolveComReference.cache
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.exe
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.pdb
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\ResolveAssemblyReference.cache
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BaoCaoTK.frmViewReport.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmDefineCondition.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmUFINDConfig.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uDataGrid.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uDateTimePicker.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uFind.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uLabel.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uLop.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uMemoEdit.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uMemoExEdit.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uNhanSu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uNumPad.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uSearch.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uSpinEdit.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uTextBox.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.uComboBox.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmAbout.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmProcess.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmThayDoiHinhNem.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmThongTinCoQuan.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmWebBrowser.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangThamNienGD.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapABC.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapGioPhuTroi.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam_ThinhGiang.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmNhanSu_BaoHiem.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaATM.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeThayDoiLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDayThemMoi.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay_ChiTiet.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTruyThu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmViewHoaDon.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmInTemLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanQuy.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaNganHang.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeHoaDonXuat.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuNhapKhac.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopLuongTheoPhongBan.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopThuNhap.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuongTheoChucDanh.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangPhuCap.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmKhauTruTrongThang.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmSoLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeNghiPhep.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongThang.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongNgay.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuong_Thuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetGiamTruGiaCanh.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Luong.frmXuatHoaDonDo.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhTangThamNienGD.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeThiDua.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmBC_TKToChucCanBo.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmChuyenPhong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhMaNhanSu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhSachDenHanNghiHuu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuanHeGiaDinh.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeNhanVienTheoDoTuoi.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTongHopQuaTrinh.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmVanBangChungChi.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTaiNanLaoDong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChuyenCongTac.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhDaoTao.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKyLuat.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKhenThuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHopDongLaoDong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuChuaTangLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuSapHetHanHD.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhCongTac.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhLuong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChucVu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHoSoNhanSu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmRestore.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmBackup.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.frmHeThong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.frmImportData.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmExport.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmSQLProcess.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCComboBox.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCComboBoxMutilCol.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisBacDaoTao.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisNamHoc.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisNganhDaoTao.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCDateTimePicker.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisLoaiDaoTao.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisKhoaHoc.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisLopHoc.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisThanhPho.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisQuanHuyen.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisDanToc.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.BSCEmisTonGiao.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DanhMucHeThong.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_DataGridConfig.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_PopupGridAdd.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.frmThongTinNguoiDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDanhSachNguoiDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.HeThong.FrND.frmNhatKyNguoiDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNhomNguoiDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDangNhap.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDoiMatKhau.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmNDDoiMatKhau.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmPhanQuyenSuDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNguoiDung.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.frmMain.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrReport.frmMainViewReport.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrReport.frmReportDesign.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeTheoLoaiHD.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTimKiemNhanSu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmPopupGridAdd.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmXetThiDua.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.ThamSoSQL.frmPopupNhapThamSo.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmSQLAnalyzer.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.BSC_User_Control.frmDataGridConfig.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmThamSoSQL.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.PrintRibbonControllerResources.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.Properties.Resources.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.TimKiem.frmTimKiemNhanSu.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI_WHM.NET.XRDesignRibbonControllerResources.resources
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.csproj.GenerateResource.Cache
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\obj\Release\DELFI WHM.NET.exe.licenses
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.exe
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\bin\Release\DELFI WHM.NET.pdb
+D:\Danh\Working\QLK\Source\BSC EMIS.NET\bin\Release\Interop.SHDocVw.dll
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\bin\Release\DELFI WHM.NET.exe.config
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\Interop.SHDocVw.dll
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.csproj.ResolveComReference.cache
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.exe
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.pdb
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\bin\Release\DELFI WHM.NET.exe
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\bin\Release\DELFI WHM.NET.pdb
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\bin\Release\Interop.SHDocVw.dll
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\ResolveAssemblyReference.cache
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.BaoCaoTK.frmViewReport.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.frmDefineCondition.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.frmUFINDConfig.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uDataGrid.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uFind.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uLabel.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uLop.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uMemoEdit.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uMemoExEdit.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uNhanSu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uNumPad.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uSearch.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uSpinEdit.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uTextBox.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.uComboBox.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmAbout.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmProcess.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmThayDoiHinhNem.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmThongTinCoQuan.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmWebBrowser.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.KhoHang.frmHangHoa.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.KhoHang.frmNhaCungCap.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.KhoHang.frmNhapHangHoa.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangThamNienGD.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapABC.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmPhuCapGioPhuTroi.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam_ThinhGiang.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmNhanSu_BaoHiem.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaATM.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeThayDoiLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDayThemMoi.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay_ChiTiet.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmTruyThu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmViewHoaDon.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmInTemLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanNam.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmQuyetToanQuy.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThanhToanLuongQuaNganHang.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeHoaDonXuat.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuLaoGiangDay.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuNhapKhac.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopLuongTheoPhongBan.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopThuNhap.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuongTheoChucDanh.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmBangPhuCap.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmKhauTruTrongThang.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmSoLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmThongKeNghiPhep.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongThang.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmChamCongNgay.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmTongHopTienLuong_Thuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetGiamTruGiaCanh.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmXetTangLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Luong.frmXuatHoaDonDo.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhTangThamNienGD.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeThiDua.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmBC_TKToChucCanBo.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmChuyenPhong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhMaNhanSu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmDanhSachDenHanNghiHuu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuanHeGiaDinh.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeNhanVienTheoDoTuoi.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTongHopQuaTrinh.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmVanBangChungChi.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTaiNanLaoDong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChuyenCongTac.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhDaoTao.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKyLuat.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhKhenThuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHopDongLaoDong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuChuaTangLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmNhanSuSapHetHanHD.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhCongTac.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhLuong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmQuaTrinhChucVu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmHoSoNhanSu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmRestore.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.HeThong.FrHT.frmBackup.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.HeThong.frmHeThong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.frmImportData.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmExport.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_Class.frmSQLProcess.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCComboBox.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCComboBoxMutilCol.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisBacDaoTao.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisNamHoc.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisNganhDaoTao.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCDateTimePicker.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisLoaiDaoTao.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisKhoaHoc.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisLopHoc.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisThanhPho.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisQuanHuyen.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisDanToc.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.BSCEmisTonGiao.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DanhMucHeThong.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_DataGridConfig.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrDM.frmDM_DM_PopupGridAdd.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.HeThong.frmThongTinNguoiDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDanhSachNguoiDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.HeThong.FrND.frmNhatKyNguoiDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNhomNguoiDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDangNhap.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmDoiMatKhau.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmNDDoiMatKhau.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmPhanQuyenSuDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrHT.FrND.frmTaoNguoiDung.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.frmMain.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrReport.frmMainViewReport.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrReport.frmReportDesign.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmThongKeTheoLoaiHD.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmTimKiemNhanSu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.frmPopupGridAdd.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.NhanSu.frmXetThiDua.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.ThamSoSQL.frmPopupNhapThamSo.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmSQLAnalyzer.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.DELFI_User_Control.frmDataGridConfig.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.FrSYS.frmThamSoSQL.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.PrintRibbonControllerResources.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.Properties.Resources.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.TimKiem.frmTimKiemNhanSu.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.XRDesignRibbonControllerResources.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.csproj.GenerateResource.Cache
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.exe.licenses
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.KhoHang.frmTimKiemHangHoa.resources
+D:\Danh\Working\QLK\Source\DELFI WHM.NET\obj\Release\DELFI_WHM.NET.KhoHang.frmImportDanhSachKhachHang.resources
+D:\Danh\Working\Delfi_Reader\Source\DELFI WHM.NET\bin\Release\DELFI WHM.NET.exe.config
+D:\Danh\Working\Delfi_Reader\Source\DELFI WHM.NET\obj\Release\Interop.SHDocVw.dll
+D:\Danh\Working\Delfi_Reader\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.csproj.ResolveComReference.cache
+D:\Danh\Working\Delfi_Reader\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.exe
+D:\Danh\Working\Delfi_Reader\Source\DELFI WHM.NET\obj\Release\DELFI WHM.NET.pdb

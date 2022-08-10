@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBACOMModelStoreContainer" CdmEntityContainer="DBACOMEntities">
+    <EntitySetMapping Name="tblConfigLinkSyncs">
+      <EntityTypeMapping TypeName="DBACOMModel.tblConfigLinkSync">
+        <MappingFragment StoreEntitySet="tblConfigLinkSync">
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HT_NGUOIDUNG">
+      <EntityTypeMapping TypeName="DBACOMModel.HT_NGUOIDUNG">
+        <MappingFragment StoreEntitySet="HT_NGUOIDUNG">
+          <ScalarProperty Name="PathHinhAnh" ColumnName="PathHinhAnh" />
+          <ScalarProperty Name="QUYENPHANQUYEN" ColumnName="QUYENPHANQUYEN" />
+          <ScalarProperty Name="LINH_VUC" ColumnName="LINH_VUC" />
+          <ScalarProperty Name="DANH_MUC" ColumnName="DANH_MUC" />
+          <ScalarProperty Name="MENU_DOC" ColumnName="MENU_DOC" />
+          <ScalarProperty Name="MENU_NGANG" ColumnName="MENU_NGANG" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="KIEUGIAODIEN" ColumnName="KIEUGIAODIEN" />
+          <ScalarProperty Name="HOATDONG" ColumnName="HOATDONG" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+          <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+          <ScalarProperty Name="NGUOIDUNG" ColumnName="NGUOIDUNG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

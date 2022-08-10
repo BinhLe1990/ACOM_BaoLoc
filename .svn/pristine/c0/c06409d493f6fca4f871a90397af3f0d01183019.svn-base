@@ -1,0 +1,165 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DELFI_WHM.NET;
+using DELFI_WHM.NET.Models;
+using DevExpress.XtraEditors;
+
+namespace DELFI_WHM.NET.CauHinh
+{
+    public partial class frmCropYear : DevExpress.XtraEditors.XtraForm
+    {
+        public frmCropYear()
+        {
+            InitializeComponent();
+        }
+
+        private void Search()
+        {
+            this.Cursor = Cursors.WaitCursor;
+            using (DBACOMEntities db = new DBACOMEntities())
+            {
+                {
+                    var data = db.DM_Khac.Where(c => c.Code.Contains("CropYear")).ToList();
+                    if (data != null)
+                    {
+                        gridCropyear.DataSource = data;
+                    }
+                }
+                {
+                    var data = db.DM_Khac.Where(c => c.Code.Contains("Certification")).ToList();
+                    if (data != null)
+                    {
+                        gridCertification.DataSource = data;
+                    }
+                }
+                {
+                    var data = db.DM_Khac.Where(c => c.Code.Contains("Pile")).ToList();
+                    if (data != null)
+                    {
+                        gridPile.DataSource = data;
+                    }
+                }
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        private void frmCropYear_Load(object sender, EventArgs e)
+        {
+            Search();
+        }
+
+        private void gridView1_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+
+        private void gridView2_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+
+        private void gridView3_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator)
+            {
+                e.Info.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+
+        private void btnLuuCropyear_Click(object sender, EventArgs e)
+        {
+            if (txtCropyear.Text.Trim() != "")
+            {
+                this.Cursor = Cursors.WaitCursor;
+                using (DBACOMEntities db = new DBACOMEntities())
+                {
+                    DM_Khac lc = new DM_Khac();
+
+                    db.DM_Khac.Add(new DM_Khac
+                    {
+                        Code = "CropYear",
+                        Ten = txtCropyear.Text
+                    });
+                    var query = (from s in db.DM_Khac
+                                 where s.Code == "CropYear" && s.Ten == txtCropyear.Text
+                                 select s).FirstOrDefault<DM_Khac>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                    Search();
+                }
+                this.Cursor = Cursors.Default;
+                XtraMessageBox.Show("Cập nhật danh sách thành công");
+            }
+        }
+
+        private void btnLuuCertification_Click(object sender, EventArgs e)
+        {
+            if (txtCertification.Text.Trim() != "")
+            {
+                this.Cursor = Cursors.WaitCursor;
+                using (DBACOMEntities db = new DBACOMEntities())
+                {
+                    DM_Khac lc = new DM_Khac();
+
+                    db.DM_Khac.Add(new DM_Khac
+                    {
+                        Code = "Certification",
+                        Ten = txtCertification.Text
+                    });
+                    var query = (from s in db.DM_Khac
+                                 where s.Code == "Certification" && s.Ten == txtCertification.Text
+                                 select s).FirstOrDefault<DM_Khac>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                    Search();
+                }
+                this.Cursor = Cursors.Default;
+                XtraMessageBox.Show("Cập nhật danh sách thành công");
+            }
+        }
+
+        private void btnLuuPile_Click(object sender, EventArgs e)
+        {
+            if (txtPile.Text.Trim() != "")
+            {
+                this.Cursor = Cursors.WaitCursor;
+                using (DBACOMEntities db = new DBACOMEntities())
+                {
+                    DM_Khac lc = new DM_Khac();
+
+                    db.DM_Khac.Add(new DM_Khac
+                    {
+                        Code = "Pile",
+                        Ten = txtPile.Text
+                    });
+                    var query = (from s in db.DM_Khac
+                                 where s.Code == "Pile" && s.Ten == txtPile.Text
+                                 select s).FirstOrDefault<DM_Khac>();
+                    if (query == null)
+                    {
+                        db.SaveChanges();
+                    }
+                    Search();
+                }
+                this.Cursor = Cursors.Default;
+                XtraMessageBox.Show("Cập nhật danh sách thành công");
+            }
+        }
+    }
+}

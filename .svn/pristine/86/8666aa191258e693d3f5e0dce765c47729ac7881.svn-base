@@ -1,0 +1,333 @@
+﻿namespace DELFI_WHM.NET.QuanLy
+{
+    partial class frmHopDongMuaHang
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHopDongMuaHang));
+            this.UnitOfMeasure = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TrangThai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cropyear = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Certification = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LocationCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SanPham = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NhaCC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayHD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.SoHopDong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.contractnetwt = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.WeightNotNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.griDanhSach = new DevExpress.XtraGrid.GridControl();
+            this.dtpDenNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.dtpTuNgay = new DELFI_WHM.NET.DELFI_User_Control.uDateTimePicker();
+            this.cboTrangThai = new DELFI_WHM.NET.DELFI_User_Control.uComboBox();
+            this.txtSoHopDong = new DELFI_WHM.NET.DELFI_User_Control.uTextBox();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.IML = new System.Windows.Forms.ImageList(this.components);
+            this.xtraTabControl3 = new DevExpress.XtraTab.XtraTabControl();
+            this.btnDongBo = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).BeginInit();
+            this.xtraTabControl3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // UnitOfMeasure
+            // 
+            this.UnitOfMeasure.Caption = "Unit of Measure";
+            this.UnitOfMeasure.FieldName = "UnitOfMeasure";
+            this.UnitOfMeasure.Name = "UnitOfMeasure";
+            this.UnitOfMeasure.Visible = true;
+            this.UnitOfMeasure.VisibleIndex = 8;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.Caption = "Trạng thái";
+            this.TrangThai.FieldName = "TrangThai";
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.Visible = true;
+            this.TrangThai.VisibleIndex = 6;
+            // 
+            // cropyear
+            // 
+            this.cropyear.Caption = "Crop year";
+            this.cropyear.FieldName = "cropyear";
+            this.cropyear.Name = "cropyear";
+            this.cropyear.Visible = true;
+            this.cropyear.VisibleIndex = 5;
+            // 
+            // Certification
+            // 
+            this.Certification.Caption = "Certification";
+            this.Certification.FieldName = "Certification";
+            this.Certification.Name = "Certification";
+            this.Certification.Visible = true;
+            this.Certification.VisibleIndex = 4;
+            // 
+            // LocationCode
+            // 
+            this.LocationCode.Caption = "Location code";
+            this.LocationCode.FieldName = "LocationCode";
+            this.LocationCode.Name = "LocationCode";
+            this.LocationCode.Visible = true;
+            this.LocationCode.VisibleIndex = 3;
+            // 
+            // SanPham
+            // 
+            this.SanPham.Caption = "Sản phẩm";
+            this.SanPham.FieldName = "SanPham";
+            this.SanPham.Name = "SanPham";
+            this.SanPham.Visible = true;
+            this.SanPham.VisibleIndex = 2;
+            // 
+            // NhaCC
+            // 
+            this.NhaCC.Caption = "Nhà cung cấp";
+            this.NhaCC.FieldName = "NhaCC";
+            this.NhaCC.Name = "NhaCC";
+            this.NhaCC.Visible = true;
+            this.NhaCC.VisibleIndex = 1;
+            // 
+            // NgayHD
+            // 
+            this.NgayHD.Caption = "Ngày hợp đồng";
+            this.NgayHD.FieldName = "NgayHD";
+            this.NgayHD.Name = "NgayHD";
+            this.NgayHD.Visible = true;
+            this.NgayHD.VisibleIndex = 0;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.SoHopDong,
+            this.NgayHD,
+            this.NhaCC,
+            this.SanPham,
+            this.LocationCode,
+            this.Certification,
+            this.cropyear,
+            this.TrangThai,
+            this.contractnetwt,
+            this.UnitOfMeasure,
+            this.WeightNotNo});
+            this.gridView1.GridControl = this.griDanhSach;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // SoHopDong
+            // 
+            this.SoHopDong.Caption = "Số hợp đồng";
+            this.SoHopDong.Name = "SoHopDong";
+            this.SoHopDong.Visible = true;
+            this.SoHopDong.VisibleIndex = 9;
+            // 
+            // contractnetwt
+            // 
+            this.contractnetwt.Caption = "Contract net Wt. (Kg)";
+            this.contractnetwt.FieldName = "contractnetwt";
+            this.contractnetwt.Name = "contractnetwt";
+            this.contractnetwt.Visible = true;
+            this.contractnetwt.VisibleIndex = 7;
+            // 
+            // WeightNotNo
+            // 
+            this.WeightNotNo.Caption = "Weight Note No.";
+            this.WeightNotNo.FieldName = "WeightNotNo";
+            this.WeightNotNo.Name = "WeightNotNo";
+            this.WeightNotNo.Visible = true;
+            this.WeightNotNo.VisibleIndex = 10;
+            // 
+            // griDanhSach
+            // 
+            this.griDanhSach.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.griDanhSach.Location = new System.Drawing.Point(-2, 160);
+            this.griDanhSach.MainView = this.gridView1;
+            this.griDanhSach.Name = "griDanhSach";
+            this.griDanhSach.Size = new System.Drawing.Size(1183, 456);
+            this.griDanhSach.TabIndex = 82;
+            this.griDanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // dtpDenNgay
+            // 
+            this.dtpDenNgay.iWidth = 65;
+            this.dtpDenNgay.Location = new System.Drawing.Point(271, 27);
+            this.dtpDenNgay.Name = "dtpDenNgay";
+            this.dtpDenNgay.sCaption = "Đến ngày:";
+            this.dtpDenNgay.Size = new System.Drawing.Size(184, 21);
+            this.dtpDenNgay.TabIndex = 50;
+            this.dtpDenNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 41, 2, 628);
+            this.dtpDenNgay.uValue = new System.DateTime(2020, 2, 14, 11, 41, 2, 628);
+            // 
+            // dtpTuNgay
+            // 
+            this.dtpTuNgay.iWidth = 90;
+            this.dtpTuNgay.Location = new System.Drawing.Point(40, 27);
+            this.dtpTuNgay.Name = "dtpTuNgay";
+            this.dtpTuNgay.sCaption = "Từ ngày:";
+            this.dtpTuNgay.Size = new System.Drawing.Size(212, 21);
+            this.dtpTuNgay.TabIndex = 50;
+            this.dtpTuNgay.uDateTime = new System.DateTime(2020, 2, 14, 11, 41, 2, 613);
+            this.dtpTuNgay.uValue = new System.DateTime(2020, 2, 14, 11, 41, 2, 613);
+            // 
+            // cboTrangThai
+            // 
+            this.cboTrangThai.iWidth = 90;
+            this.cboTrangThai.Location = new System.Drawing.Point(40, 54);
+            this.cboTrangThai.Name = "cboTrangThai";
+            this.cboTrangThai.sCaption = "Trạng thái:";
+            this.cboTrangThai.sField = "";
+            this.cboTrangThai.Size = new System.Drawing.Size(415, 21);
+            this.cboTrangThai.sNullText = "<Chọn trạng thái>";
+            this.cboTrangThai.TabIndex = 51;
+            this.cboTrangThai.uDisplayMember = "TrangThai";
+            this.cboTrangThai.uEditValue = null;
+            this.cboTrangThai.uTableName = "tblSanPham";
+            this.cboTrangThai.uTextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboTrangThai.uValueMember = "TrangThai";
+            // 
+            // txtSoHopDong
+            // 
+            this.txtSoHopDong.bAllowNull = DevExpress.Utils.DefaultBoolean.Default;
+            this.txtSoHopDong.iWidth = 90;
+            this.txtSoHopDong.Location = new System.Drawing.Point(40, 81);
+            this.txtSoHopDong.Name = "txtSoHopDong";
+            this.txtSoHopDong.sCaption = "Số hợp đồng:";
+            this.txtSoHopDong.SelectionStart = 0;
+            this.txtSoHopDong.Size = new System.Drawing.Size(415, 21);
+            this.txtSoHopDong.TabIndex = 0;
+            this.txtSoHopDong.Tag = "..MaNhaCungCap";
+            // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.AutoScroll = true;
+            this.xtraTabPage3.Controls.Add(this.dtpDenNgay);
+            this.xtraTabPage3.Controls.Add(this.btnSearch);
+            this.xtraTabPage3.Controls.Add(this.dtpTuNgay);
+            this.xtraTabPage3.Controls.Add(this.cboTrangThai);
+            this.xtraTabPage3.Controls.Add(this.btnDongBo);
+            this.xtraTabPage3.Controls.Add(this.txtSoHopDong);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(1191, 139);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ImageIndex = 0;
+            this.btnSearch.ImageList = this.IML;
+            this.btnSearch.Location = new System.Drawing.Point(474, 76);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(98, 26);
+            this.btnSearch.TabIndex = 80;
+            this.btnSearch.Text = "Tìm kiếm";
+            // 
+            // IML
+            // 
+            this.IML.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IML.ImageStream")));
+            this.IML.TransparentColor = System.Drawing.Color.Transparent;
+            this.IML.Images.SetKeyName(0, "Search.png");
+            this.IML.Images.SetKeyName(1, "Exit.png");
+            this.IML.Images.SetKeyName(2, "Save as.png");
+            this.IML.Images.SetKeyName(3, "Open file.png");
+            this.IML.Images.SetKeyName(4, "Redo.png");
+            this.IML.Images.SetKeyName(5, "Cancel.png");
+            this.IML.Images.SetKeyName(6, "btnSave.LargeGlyph.png");
+            this.IML.Images.SetKeyName(7, "postscript.png");
+            this.IML.Images.SetKeyName(8, "Print.png");
+            this.IML.Images.SetKeyName(9, "replaceItem1.LargeGlyph.png");
+            // 
+            // xtraTabControl3
+            // 
+            this.xtraTabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl3.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Right;
+            this.xtraTabControl3.Location = new System.Drawing.Point(2, 0);
+            this.xtraTabControl3.Name = "xtraTabControl3";
+            this.xtraTabControl3.SelectedTabPage = this.xtraTabPage3;
+            this.xtraTabControl3.Size = new System.Drawing.Size(1210, 145);
+            this.xtraTabControl3.TabIndex = 79;
+            this.xtraTabControl3.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage3});
+            // 
+            // btnDongBo
+            // 
+            this.btnDongBo.ImageIndex = 9;
+            this.btnDongBo.ImageList = this.IML;
+            this.btnDongBo.Location = new System.Drawing.Point(578, 76);
+            this.btnDongBo.Name = "btnDongBo";
+            this.btnDongBo.Size = new System.Drawing.Size(169, 26);
+            this.btnDongBo.TabIndex = 81;
+            this.btnDongBo.Tag = "ADD";
+            this.btnDongBo.Text = "Đồng bộ từ Navision về";
+            // 
+            // frmHopDongMuaHang
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 611);
+            this.Controls.Add(this.griDanhSach);
+            this.Controls.Add(this.xtraTabControl3);
+            this.Name = "frmHopDongMuaHang";
+            this.Text = "HỢP ĐỒNG MUA HÀNG";
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griDanhSach)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl3)).EndInit();
+            this.xtraTabControl3.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraGrid.Columns.GridColumn UnitOfMeasure;
+        private DevExpress.XtraGrid.Columns.GridColumn TrangThai;
+        private DevExpress.XtraGrid.Columns.GridColumn cropyear;
+        private DevExpress.XtraGrid.Columns.GridColumn Certification;
+        private DevExpress.XtraGrid.Columns.GridColumn LocationCode;
+        private DevExpress.XtraGrid.Columns.GridColumn SanPham;
+        private DevExpress.XtraGrid.Columns.GridColumn NhaCC;
+        private DevExpress.XtraGrid.Columns.GridColumn NgayHD;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn contractnetwt;
+        private DevExpress.XtraGrid.GridControl griDanhSach;
+        private DELFI_User_Control.uDateTimePicker dtpDenNgay;
+        private DELFI_User_Control.uDateTimePicker dtpTuNgay;
+        private DELFI_User_Control.uComboBox cboTrangThai;
+        private DELFI_User_Control.uTextBox txtSoHopDong;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private System.Windows.Forms.ImageList IML;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl3;
+        private DevExpress.XtraEditors.SimpleButton btnDongBo;
+        private DevExpress.XtraGrid.Columns.GridColumn SoHopDong;
+        private DevExpress.XtraGrid.Columns.GridColumn WeightNotNo;
+    }
+}

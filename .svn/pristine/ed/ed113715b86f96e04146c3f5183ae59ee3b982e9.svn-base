@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBACOMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBACOM.dbo.HT_NGUOIDUNG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="HT_NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="NGUOIDUNG" />
+            <PropertyRef Name="TAIKHOAN" />
+            <PropertyRef Name="MATKHAU" />
+            <PropertyRef Name="HOTEN" />
+            <PropertyRef Name="KIEUGIAODIEN" />
+            <PropertyRef Name="GHICHU" />
+            <PropertyRef Name="QUYENPHANQUYEN" />
+          </Key>
+          <Property Name="NGUOIDUNG" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TAIKHOAN" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MATKHAU" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="HOTEN" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="HOATDONG" Type="bit" />
+          <Property Name="KIEUGIAODIEN" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GHICHU" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="QUYEN" Type="ntext" />
+          <Property Name="MENU_NGANG" Type="ntext" />
+          <Property Name="MENU_DOC" Type="ntext" />
+          <Property Name="DANH_MUC" Type="ntext" />
+          <Property Name="LINH_VUC" Type="ntext" />
+          <Property Name="QUYENPHANQUYEN" Type="bit" Nullable="false" />
+          <Property Name="PathHinhAnh" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tblConfigLinkSync">
+          <Key>
+            <PropertyRef Name="Value" />
+          </Key>
+          <Property Name="Value" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="DBACOMModelStoreContainer">
+          <EntitySet Name="tblConfigLinkSync" EntityType="Self.tblConfigLinkSync" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HT_NGUOIDUNG" EntityType="Self.HT_NGUOIDUNG" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[HT_NGUOIDUNG].[NGUOIDUNG] AS [NGUOIDUNG], 
+[HT_NGUOIDUNG].[TAIKHOAN] AS [TAIKHOAN], 
+[HT_NGUOIDUNG].[MATKHAU] AS [MATKHAU], 
+[HT_NGUOIDUNG].[HOTEN] AS [HOTEN], 
+[HT_NGUOIDUNG].[HOATDONG] AS [HOATDONG], 
+[HT_NGUOIDUNG].[KIEUGIAODIEN] AS [KIEUGIAODIEN], 
+[HT_NGUOIDUNG].[GHICHU] AS [GHICHU], 
+[HT_NGUOIDUNG].[QUYEN] AS [QUYEN], 
+[HT_NGUOIDUNG].[MENU_NGANG] AS [MENU_NGANG], 
+[HT_NGUOIDUNG].[MENU_DOC] AS [MENU_DOC], 
+[HT_NGUOIDUNG].[DANH_MUC] AS [DANH_MUC], 
+[HT_NGUOIDUNG].[LINH_VUC] AS [LINH_VUC], 
+[HT_NGUOIDUNG].[QUYENPHANQUYEN] AS [QUYENPHANQUYEN], 
+[HT_NGUOIDUNG].[PathHinhAnh] AS [PathHinhAnh]
+FROM [dbo].[HT_NGUOIDUNG] AS [HT_NGUOIDUNG]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBACOMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DBACOMEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="tblConfigLinkSyncs" EntityType="DBACOMModel.tblConfigLinkSync" />
+          <EntitySet Name="HT_NGUOIDUNG" EntityType="DBACOMModel.HT_NGUOIDUNG" />
+        </EntityContainer>
+        <EntityType Name="tblConfigLinkSync">
+          <Key>
+            <PropertyRef Name="Value" />
+          </Key>
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HT_NGUOIDUNG">
+          <Key>
+            <PropertyRef Name="NGUOIDUNG" />
+            <PropertyRef Name="TAIKHOAN" />
+            <PropertyRef Name="MATKHAU" />
+            <PropertyRef Name="HOTEN" />
+            <PropertyRef Name="KIEUGIAODIEN" />
+            <PropertyRef Name="GHICHU" />
+            <PropertyRef Name="QUYENPHANQUYEN" />
+          </Key>
+          <Property Name="NGUOIDUNG" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TAIKHOAN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MATKHAU" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HOTEN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="HOATDONG" Type="Boolean" />
+          <Property Name="KIEUGIAODIEN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GHICHU" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="QUYEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MENU_NGANG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MENU_DOC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DANH_MUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LINH_VUC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="QUYENPHANQUYEN" Type="Boolean" Nullable="false" />
+          <Property Name="PathHinhAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBACOMModelStoreContainer" CdmEntityContainer="DBACOMEntities" >
+          <EntitySetMapping Name="tblConfigLinkSyncs">
+            <EntityTypeMapping TypeName="DBACOMModel.tblConfigLinkSync">
+              <MappingFragment StoreEntitySet="tblConfigLinkSync">
+                <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HT_NGUOIDUNG">
+            <EntityTypeMapping TypeName="DBACOMModel.HT_NGUOIDUNG">
+              <MappingFragment StoreEntitySet="HT_NGUOIDUNG">
+                <ScalarProperty Name="PathHinhAnh" ColumnName="PathHinhAnh" />
+                <ScalarProperty Name="QUYENPHANQUYEN" ColumnName="QUYENPHANQUYEN" />
+                <ScalarProperty Name="LINH_VUC" ColumnName="LINH_VUC" />
+                <ScalarProperty Name="DANH_MUC" ColumnName="DANH_MUC" />
+                <ScalarProperty Name="MENU_DOC" ColumnName="MENU_DOC" />
+                <ScalarProperty Name="MENU_NGANG" ColumnName="MENU_NGANG" />
+                <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+                <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+                <ScalarProperty Name="KIEUGIAODIEN" ColumnName="KIEUGIAODIEN" />
+                <ScalarProperty Name="HOATDONG" ColumnName="HOATDONG" />
+                <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+                <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />
+                <ScalarProperty Name="TAIKHOAN" ColumnName="TAIKHOAN" />
+                <ScalarProperty Name="NGUOIDUNG" ColumnName="NGUOIDUNG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
